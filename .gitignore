@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Data & artifacts (fetched/built locally, never committed)
+data/
+!data/.gitkeep
+# evals/results committed deliberately: README numbers must be traceable
+*.local.json
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# Node / UI
+node_modules/
+ui/dist/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
