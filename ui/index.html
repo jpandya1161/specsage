@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>specsage — grounded answers from the RFC archive</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <header class="memo" role="banner">
+    <div class="memo-row">
+      <span class="memo-left">specsage</span>
+      <span class="memo-right">Network Working Group</span>
+    </div>
+    <div class="memo-row">
+      <span class="memo-left dim">Request for Comments: yours</span>
+      <span class="memo-right dim" id="memo-status">188 RFCs indexed &middot; local models</span>
+    </div>
+  </header>
+
+  <main id="log" class="log" aria-live="polite"></main>
+
+  <form id="composer" class="composer">
+    <span class="prompt-mark" aria-hidden="true">&gt;</span>
+    <input
+      id="question"
+      name="question"
+      type="text"
+      autocomplete="off"
+      spellcheck="false"
+      placeholder="ask about HTTP, TLS, QUIC, DNS, OAuth&hellip;"
+      aria-label="Ask a question about internet standards"
+      minlength="3"
+      maxlength="2000"
+      required
+    />
+    <button type="submit" id="send" aria-label="Send question">&#9166;</button>
+  </form>
+
+  <template id="tpl-exchange">
+    <section class="exchange">
+      <p class="question-line"><span class="q-mark">you &#9656;</span> <span class="q-text"></span></p>
+      <p class="status-line" hidden></p>
+      <div class="answer" hidden></div>
+      <details class="sources" hidden>
+        <summary>sources</summary>
+        <ol class="source-list"></ol>
+      </details>
+    </section>
+  </template>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>
