@@ -1,0 +1,186 @@
+/* specsage — RFC-memo visual grammar.
+   mono = protocol material (header, sources, status, chips)
+   serif = synthesized prose (the assistant's answers)              */
+
+:root {
+  --paper: #f5f6f3;
+  --ink: #1a1f24;
+  --archive: #2447a8;   /* ink-stamp blue: links, chips, focus */
+  --stamp: #b3382d;     /* refusals and errors only */
+  --dim: #6b7168;
+  --rule: #d9dcd3;
+  --card: #fdfdfb;
+  --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  --serif: Charter, "Iowan Old Style", Georgia, "Times New Roman", serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0 auto;
+  max-width: 46rem;
+  padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+/* ── RFC memo header ─────────────────────────────────────── */
+.memo {
+  padding: 1.4rem 0 0.9rem;
+  border-bottom: 1px solid var(--ink);
+}
+.memo-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.memo-left { font-weight: 700; letter-spacing: 0.02em; }
+.memo-row:first-child .memo-left { text-transform: uppercase; }
+.dim { color: var(--dim); font-weight: 400; }
+
+/* ── conversation log ────────────────────────────────────── */
+.log {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem 0 2rem;
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  .log { scroll-behavior: auto; }
+}
+
+.exchange { margin-bottom: 2.25rem; }
+
+.question-line { margin: 0 0 0.75rem; color: var(--dim); overflow-wrap: break-word; }
+.q-mark { color: var(--ink); font-weight: 700; }
+
+.status-line {
+  margin: 0.5rem 0;
+  color: var(--dim);
+  font-size: 0.8125rem;
+}
+.status-line::before { content: "% "; }
+
+/* answers: serif prose, generous measure */
+.answer {
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  margin: 0.25rem 0 0.75rem;
+}
+.answer.streaming::after {
+  content: "\258D";
+  color: var(--archive);
+  animation: blink 1s steps(2) infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .answer.streaming::after { animation: none; }
+}
+
+.answer.refused {
+  border-left: 3px solid var(--stamp);
+  padding-left: 0.9rem;
+  color: var(--stamp);
+  font-family: var(--mono);
+  font-size: 0.875rem;
+}
+
+/* citation chips — the one loud element */
+.chip {
+  font-family: var(--mono);
+  font-size: 0.72em;
+  font-weight: 700;
+  color: var(--archive);
+  background: none;
+  border: 1px solid currentcolor;
+  border-radius: 3px;
+  padding: 0 0.28em;
+  margin: 0 0.12em;
+  vertical-align: 0.18em;
+  cursor: pointer;
+  text-decoration: none;
+}
+.chip:hover, .chip:focus-visible { background: var(--archive); color: var(--card); }
+
+/* ── sources ─────────────────────────────────────────────── */
+.sources {
+  border: 1px solid var(--rule);
+  background: var(--card);
+  border-radius: 4px;
+  font-size: 0.8125rem;
+}
+.sources summary {
+  cursor: pointer;
+  padding: 0.45rem 0.75rem;
+  color: var(--dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+}
+.source-list { margin: 0; padding: 0 0.75rem 0.6rem 0.75rem; list-style: none; }
+.source-list li {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.25rem 0.25rem;
+  border-radius: 3px;
+}
+.source-list li.flash { background: color-mix(in srgb, var(--archive) 12%, transparent); }
+.source-n { color: var(--archive); font-weight: 700; }
+.source-list a { color: var(--ink); text-decoration: none; }
+.source-list a:hover, .source-list a:focus-visible {
+  color: var(--archive);
+  text-decoration: underline;
+}
+.source-score { margin-left: auto; color: var(--dim); }
+
+/* ── composer ────────────────────────────────────────────── */
+.composer {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 0 1.4rem;
+  border-top: 1px solid var(--ink);
+}
+.prompt-mark { color: var(--archive); font-weight: 700; }
+#question {
+  flex: 1;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  outline: none;
+  padding: 0.35rem 0;
+}
+#question::placeholder { color: var(--dim); }
+#send {
+  font: inherit;
+  border: 1px solid var(--ink);
+  background: var(--card);
+  color: var(--ink);
+  border-radius: 3px;
+  padding: 0.2rem 0.65rem;
+  cursor: pointer;
+}
+#send:hover:not(:disabled) { background: var(--ink); color: var(--paper); }
+#send:disabled { opacity: 0.4; cursor: default; }
+
+:focus-visible { outline: 2px solid var(--archive); outline-offset: 2px; }
+
+.error-line { color: var(--stamp); }
+
+@media (max-width: 480px) {
+  body { font-size: 0.8125rem; padding: 0 0.9rem; }
+  .answer { font-size: 1rem; }
+  .memo-row { flex-direction: column; gap: 0; }
+  .memo-right { display: none; }
+}
