@@ -1,0 +1,60 @@
+{"id": "q01", "scope": "in", "question": "What does the 304 Not Modified status code mean?", "labels": [{"rfc": 9110, "section": "15.4.5"}]}
+{"id": "q02", "scope": "in", "question": "How does a server tell a client how long to wait before retrying a request?", "labels": [{"rfc": 9110, "section": "10.2.3"}]}
+{"id": "q03", "scope": "in", "question": "What is an HTTP ETag and what is it used for?", "labels": [{"rfc": 9110, "section": "8.8.3"}, {"rfc": 9110, "section": "13"}]}
+{"id": "q04", "scope": "in", "question": "What are the semantics of the HTTP GET method?", "labels": [{"rfc": 9110, "section": "9.3.1"}]}
+{"id": "q05", "scope": "in", "question": "How does content negotiation work in HTTP?", "labels": [{"rfc": 9110, "section": "12"}]}
+{"id": "q06", "scope": "in", "question": "How does chunked transfer coding work in HTTP/1.1?", "labels": [{"rfc": 9112, "section": "7.1"}]}
+{"id": "q07", "scope": "in", "question": "What are the stream states in HTTP/2?", "labels": [{"rfc": 9113, "section": "5.1"}]}
+{"id": "q08", "scope": "in", "question": "How do SETTINGS frames work in HTTP/2?", "labels": [{"rfc": 9113, "section": "6.5"}]}
+{"id": "q09", "scope": "in", "question": "How does server push work in HTTP/2?", "labels": [{"rfc": 9113, "section": "8.4"}]}
+{"id": "q10", "scope": "in", "question": "How is an HTTP/3 connection established?", "labels": [{"rfc": 9114, "section": "3.2"}, {"rfc": 9114, "section": "3"}]}
+{"id": "q11", "scope": "in", "question": "How does request prioritization in HTTP/3 differ from HTTP/2?", "labels": [{"rfc": 9113, "section": "5.3"}, {"rfc": 9114, "section": "A.2.1"}]}
+{"id": "q12", "scope": "in", "question": "What is 0-RTT early data in TLS 1.3 and what are its security risks?", "labels": [{"rfc": 8446, "section": "2.3"}, {"rfc": 8446, "section": "8"}]}
+{"id": "q13", "scope": "in", "question": "How does session resumption with pre-shared keys work in TLS 1.3?", "labels": [{"rfc": 8446, "section": "2.2"}]}
+{"id": "q14", "scope": "in", "question": "What is a HelloRetryRequest in TLS 1.3 and when is it sent?", "labels": [{"rfc": 8446, "section": "4.1.4"}]}
+{"id": "q15", "scope": "in", "question": "How is the key schedule derived in TLS 1.3?", "labels": [{"rfc": 8446, "section": "7.1"}]}
+{"id": "q16", "scope": "in", "question": "How does flow control work in QUIC?", "labels": [{"rfc": 9000, "section": "4"}]}
+{"id": "q17", "scope": "in", "question": "How does QUIC handle connection migration when a client changes network?", "labels": [{"rfc": 9000, "section": "9"}]}
+{"id": "q18", "scope": "in", "question": "What are QUIC streams and how are they opened?", "labels": [{"rfc": 9000, "section": "2"}]}
+{"id": "q19", "scope": "in", "question": "How does version negotiation work in QUIC?", "labels": [{"rfc": 9000, "section": "6"}]}
+{"id": "q20", "scope": "in", "question": "What fields are in the DNS message header?", "labels": [{"rfc": 1035, "section": "4.1.1"}]}
+{"id": "q21", "scope": "in", "question": "How does DNS message compression work?", "labels": [{"rfc": 1035, "section": "4.1.4"}]}
+{"id": "q22", "scope": "in", "question": "What media type is used by DNS over HTTPS?", "labels": [{"rfc": 8484, "section": "6"}]}
+{"id": "q23", "scope": "in", "question": "How does the OAuth 2.0 authorization code grant flow work?", "labels": [{"rfc": 6749, "section": "4.1"}, {"rfc": 6749, "section": "1.3.1"}]}
+{"id": "q24", "scope": "in", "question": "What are refresh tokens for in OAuth 2.0?", "labels": [{"rfc": 6749, "section": "1.5"}, {"rfc": 6749, "section": "6"}, {"rfc": 6749, "section": "10.4"}]}
+{"id": "q25", "scope": "in", "question": "How does PKCE protect the OAuth authorization code flow?", "labels": [{"rfc": 7636, "section": "4"}, {"rfc": 7636, "section": "1.1"}]}
+{"id": "q26", "scope": "in", "question": "What does the exp claim in a JWT mean?", "labels": [{"rfc": 7519, "section": "4.1.4"}]}
+{"id": "q27", "scope": "in", "question": "What does the Secure attribute on an HTTP cookie do?", "labels": [{"rfc": 6265, "section": "4.1.2.5"}, {"rfc": 6265, "section": "5.2.5"}]}
+{"id": "q28", "scope": "in", "question": "What protection does the HttpOnly cookie attribute provide?", "labels": [{"rfc": 6265, "section": "4.1.2.6"}, {"rfc": 6265, "section": "5.2.6"}]}
+{"id": "q29", "scope": "in", "question": "How is a TCP connection established with the three-way handshake?", "labels": [{"rfc": 9293, "section": "3.5"}]}
+{"id": "q30", "scope": "in", "question": "How does TCP slow start work?", "labels": [{"rfc": 5681, "section": "3.1"}]}
+{"id": "q31", "scope": "in", "question": "What is TCP fast retransmit and when does it trigger?", "labels": [{"rfc": 5681, "section": "3.2"}]}
+{"id": "q32", "scope": "in", "question": "Why must WebSocket clients mask the frames they send to the server?", "labels": [{"rfc": 6455, "section": "5.3"}, {"rfc": 6455, "section": "10.3"}]}
+{"id": "q33", "scope": "in", "question": "How does the WebSocket opening handshake upgrade an HTTP connection?", "labels": [{"rfc": 6455, "section": "1.3"}, {"rfc": 6455, "section": "4"}]}
+{"id": "q34", "scope": "in", "question": "How do WebSocket control frames such as Close work?", "labels": [{"rfc": 6455, "section": "5.5"}]}
+{"id": "q35", "scope": "in", "question": "What is percent-encoding in a URI and when is it required?", "labels": [{"rfc": 3986, "section": "2.1"}]}
+{"id": "q36", "scope": "in", "question": "How does base64url encoding differ from standard base64?", "labels": [{"rfc": 4648, "section": "5"}, {"rfc": 4648, "section": "4"}]}
+{"id": "q37", "scope": "in", "question": "Which IPv4 address ranges are reserved for private internets?", "labels": [{"rfc": 1918, "section": "3"}]}
+{"id": "q38", "scope": "in", "question": "How does fragmentation work in IPv6?", "labels": [{"rfc": 8200, "section": "4.5"}]}
+{"id": "q39", "scope": "in", "question": "How does a DHCP client discover and obtain an IP address?", "labels": [{"rfc": 2131, "section": "3.1"}, {"rfc": 2131, "section": "4.3.1"}]}
+{"id": "q40", "scope": "in", "question": "How does DKIM associate a signing domain with an email message?", "labels": [{"rfc": 6376, "section": "3.5"}, {"rfc": 6376, "section": "2.5"}, {"rfc": 6376, "section": "1.2"}]}
+{"id": "q41", "scope": "in", "question": "What does the SPF all mechanism match?", "labels": [{"rfc": 7208, "section": "5.1"}]}
+{"id": "q42", "scope": "in", "question": "What is identifier alignment in DMARC?", "labels": [{"rfc": 7489, "section": "3.1"}]}
+{"id": "q43", "scope": "in", "question": "How do MX records determine where mail is relayed?", "labels": [{"rfc": 5321, "section": "3.6.2"}]}
+{"id": "q44", "scope": "in", "question": "How does the TOTP algorithm generate one-time passwords?", "labels": [{"rfc": 6238, "section": "4"}]}
+{"id": "q45", "scope": "in", "question": "How does the ACME HTTP-01 challenge prove control of a domain?", "labels": [{"rfc": 8555, "section": "8.3"}]}
+{"id": "q46", "scope": "in", "question": "Which Argon2 variant does the RFC recommend and why?", "labels": [{"rfc": 9106, "section": "3.4.1.3"}, {"rfc": 9106, "section": "4"}, {"rfc": 9106, "section": "7.4"}]}
+{"id": "q47", "scope": "in", "question": "How does the BGP decision process select which route to use?", "labels": [{"rfc": 4271, "section": "9.1"}]}
+{"id": "q48", "scope": "in", "question": "What are BGP path attributes?", "labels": [{"rfc": 4271, "section": "5"}]}
+{"id": "q49", "scope": "in", "question": "What fields make up the IPv4 header?", "labels": [{"rfc": 791, "section": "3.1"}]}
+{"id": "q50", "scope": "in", "question": "How does Ed25519 signature generation work?", "labels": [{"rfc": 8032, "section": "5.1.6"}, {"rfc": 8032, "section": "3.3"}]}
+{"id": "q51", "scope": "out", "question": "What is the best biryani recipe?", "labels": []}
+{"id": "q52", "scope": "out", "question": "Who won the 2022 FIFA World Cup?", "labels": []}
+{"id": "q53", "scope": "out", "question": "How do I center a div horizontally and vertically in CSS?", "labels": []}
+{"id": "q54", "scope": "out", "question": "What does the Linux fork() system call return in the child process?", "labels": []}
+{"id": "q55", "scope": "out", "question": "Summarize the plot of Hamlet.", "labels": []}
+{"id": "q56", "scope": "out", "question": "What is the capital of Australia?", "labels": []}
+{"id": "q57", "scope": "out", "question": "How does Bitcoin adjust its mining difficulty?", "labels": []}
+{"id": "q58", "scope": "out", "question": "What is pod affinity in Kubernetes?", "labels": []}
+{"id": "q59", "scope": "out", "question": "Write a Python function that reverses a string.", "labels": []}
+{"id": "q60", "scope": "out", "question": "What are the common side effects of ibuprofen?", "labels": []}

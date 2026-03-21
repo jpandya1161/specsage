@@ -1,0 +1,3912 @@
+{
+  "ran_at": "2026-07-09T04:02:34+00:00",
+  "config": {
+    "llm_provider": "ollama",
+    "llm_model": "llama3.1:8b",
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "reranker_model": "Xenova/ms-marco-MiniLM-L-6-v2",
+    "scope_threshold": 2.0,
+    "questions_in_scope": 50,
+    "questions_out_of_scope": 10
+  },
+  "retrieval": {
+    "summary": {
+      "vector": {
+        "precision@5": 0.308,
+        "recall@5": 0.783,
+        "mrr": 0.619
+      },
+      "bm25": {
+        "precision@5": 0.236,
+        "recall@5": 0.637,
+        "mrr": 0.472
+      },
+      "fused": {
+        "precision@5": 0.292,
+        "recall@5": 0.753,
+        "mrr": 0.573
+      },
+      "reranked": {
+        "precision@5": 0.332,
+        "recall@5": 0.823,
+        "mrr": 0.644
+      }
+    },
+    "per_question": [
+      {
+        "id": "q01",
+        "question": "What does the 304 Not Modified status code mean?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q02",
+        "question": "How does a server tell a client how long to wait before retrying a request?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q03",
+        "question": "What is an HTTP ETag and what is it used for?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 0.5
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.036
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 0.333
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 0.25
+        }
+      },
+      {
+        "id": "q04",
+        "question": "What are the semantics of the HTTP GET method?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.25
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.083
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.333
+        },
+        "reranked": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 0.333
+        }
+      },
+      {
+        "id": "q05",
+        "question": "How does content negotiation work in HTTP?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.333
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.2
+        },
+        "reranked": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q06",
+        "question": "How does chunked transfer coding work in HTTP/1.1?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.333
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.5
+        }
+      },
+      {
+        "id": "q07",
+        "question": "What are the stream states in HTTP/2?",
+        "vector": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.036
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.2
+        },
+        "fused": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.167
+        },
+        "reranked": {
+          "p@5": 0.8,
+          "r@5": 1.0,
+          "rr": 0.5
+        }
+      },
+      {
+        "id": "q08",
+        "question": "How do SETTINGS frames work in HTTP/2?",
+        "vector": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.091
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.143
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.2
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q09",
+        "question": "How does server push work in HTTP/2?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.167
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q10",
+        "question": "How is an HTTP/3 connection established?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 0.2
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.1
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.25
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.5
+        }
+      },
+      {
+        "id": "q11",
+        "question": "How does request prioritization in HTTP/3 differ from HTTP/2?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q12",
+        "question": "What is 0-RTT early data in TLS 1.3 and what are its security risks?",
+        "vector": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 0.2
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 0.5
+        },
+        "reranked": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q13",
+        "question": "How does session resumption with pre-shared keys work in TLS 1.3?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.25
+        },
+        "bm25": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.333
+        },
+        "fused": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.333
+        },
+        "reranked": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.333
+        }
+      },
+      {
+        "id": "q14",
+        "question": "What is a HelloRetryRequest in TLS 1.3 and when is it sent?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.333
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.143
+        },
+        "fused": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "reranked": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.25
+        }
+      },
+      {
+        "id": "q15",
+        "question": "How is the key schedule derived in TLS 1.3?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.8,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q16",
+        "question": "How does flow control work in QUIC?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.25
+        },
+        "fused": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.333
+        },
+        "reranked": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q17",
+        "question": "How does QUIC handle connection migration when a client changes network?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.333
+        },
+        "fused": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "reranked": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.25
+        }
+      },
+      {
+        "id": "q18",
+        "question": "What are QUIC streams and how are they opened?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.25
+        },
+        "fused": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q19",
+        "question": "How does version negotiation work in QUIC?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.333
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q20",
+        "question": "What fields are in the DNS message header?",
+        "vector": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.0
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.0
+        },
+        "fused": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.0
+        },
+        "reranked": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.0
+        }
+      },
+      {
+        "id": "q21",
+        "question": "How does DNS message compression work?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.25
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.0
+        },
+        "fused": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.083
+        },
+        "reranked": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.143
+        }
+      },
+      {
+        "id": "q22",
+        "question": "What media type is used by DNS over HTTPS?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.333
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.5
+        }
+      },
+      {
+        "id": "q23",
+        "question": "How does the OAuth 2.0 authorization code grant flow work?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 0.5,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 0.2
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 0.5
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 0.5
+        }
+      },
+      {
+        "id": "q24",
+        "question": "What are refresh tokens for in OAuth 2.0?",
+        "vector": {
+          "p@5": 0.8,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.4,
+          "r@5": 0.667,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.4,
+          "r@5": 0.667,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q25",
+        "question": "How does PKCE protect the OAuth authorization code flow?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 0.25
+        },
+        "bm25": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.333
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 0.5
+        },
+        "reranked": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.167
+        }
+      },
+      {
+        "id": "q26",
+        "question": "What does the exp claim in a JWT mean?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q27",
+        "question": "What does the Secure attribute on an HTTP cookie do?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 0.5
+        },
+        "fused": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q28",
+        "question": "What protection does the HttpOnly cookie attribute provide?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q29",
+        "question": "How is a TCP connection established with the three-way handshake?",
+        "vector": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.8,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q30",
+        "question": "How does TCP slow start work?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "bm25": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q31",
+        "question": "What is TCP fast retransmit and when does it trigger?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.5
+        }
+      },
+      {
+        "id": "q32",
+        "question": "Why must WebSocket clients mask the frames they send to the server?",
+        "vector": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.077
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 0.333
+        },
+        "reranked": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 0.5
+        }
+      },
+      {
+        "id": "q33",
+        "question": "How does the WebSocket opening handshake upgrade an HTTP connection?",
+        "vector": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 1.0,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 1.0,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 1.0,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q34",
+        "question": "How do WebSocket control frames such as Close work?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.25
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.2
+        }
+      },
+      {
+        "id": "q35",
+        "question": "What is percent-encoding in a URI and when is it required?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.25
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.333
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q36",
+        "question": "How does base64url encoding differ from standard base64?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.143
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 0.333
+        },
+        "reranked": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.0
+        }
+      },
+      {
+        "id": "q37",
+        "question": "Which IPv4 address ranges are reserved for private internets?",
+        "vector": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.062
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.25
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.2
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q38",
+        "question": "How does fragmentation work in IPv6?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.25
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.0
+        },
+        "fused": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.067
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.5
+        }
+      },
+      {
+        "id": "q39",
+        "question": "How does a DHCP client discover and obtain an IP address?",
+        "vector": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.143
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.1
+        },
+        "fused": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.1
+        },
+        "reranked": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.0
+        }
+      },
+      {
+        "id": "q40",
+        "question": "How does DKIM associate a signing domain with an email message?",
+        "vector": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.053
+        },
+        "bm25": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "fused": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.091
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 0.333,
+          "rr": 0.25
+        }
+      },
+      {
+        "id": "q41",
+        "question": "What does the SPF all mechanism match?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.083
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.333
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q42",
+        "question": "What is identifier alignment in DMARC?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "bm25": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "fused": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "reranked": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 0.5
+        }
+      },
+      {
+        "id": "q43",
+        "question": "How do MX records determine where mail is relayed?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.0
+        },
+        "fused": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.077
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.5
+        }
+      },
+      {
+        "id": "q44",
+        "question": "How does the TOTP algorithm generate one-time passwords?",
+        "vector": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.333
+        }
+      },
+      {
+        "id": "q45",
+        "question": "How does the ACME HTTP-01 challenge prove control of a domain?",
+        "vector": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 0.5
+        },
+        "fused": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q46",
+        "question": "Which Argon2 variant does the RFC recommend and why?",
+        "vector": {
+          "p@5": 0.6,
+          "r@5": 0.667,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.4,
+          "r@5": 0.667,
+          "rr": 0.5
+        },
+        "fused": {
+          "p@5": 0.4,
+          "r@5": 0.667,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.4,
+          "r@5": 0.667,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q47",
+        "question": "How does the BGP decision process select which route to use?",
+        "vector": {
+          "p@5": 1.0,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 1.0,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.8,
+          "r@5": 1.0,
+          "rr": 1.0
+        }
+      },
+      {
+        "id": "q48",
+        "question": "What are BGP path attributes?",
+        "vector": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "bm25": {
+          "p@5": 0.4,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "fused": {
+          "p@5": 0.6,
+          "r@5": 1.0,
+          "rr": 1.0
+        },
+        "reranked": {
+          "p@5": 0.8,
+          "r@5": 1.0,
+          "rr": 0.5
+        }
+      },
+      {
+        "id": "q49",
+        "question": "What fields make up the IPv4 header?",
+        "vector": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.0
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.0
+        },
+        "fused": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.0
+        },
+        "reranked": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.0
+        }
+      },
+      {
+        "id": "q50",
+        "question": "How does Ed25519 signature generation work?",
+        "vector": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.091
+        },
+        "bm25": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.0
+        },
+        "fused": {
+          "p@5": 0.0,
+          "r@5": 0.0,
+          "rr": 0.043
+        },
+        "reranked": {
+          "p@5": 0.2,
+          "r@5": 0.5,
+          "rr": 0.2
+        }
+      }
+    ]
+  },
+  "generation": {
+    "summary": {
+      "in_scope_answer_rate": 1.0,
+      "out_of_scope_refusal_rate": 1.0,
+      "citation_validity": 1.0,
+      "groundedness": 0.966,
+      "segments_scored": 203,
+      "refusal_matrix": {
+        "in_answered": 50,
+        "in_refused": 0,
+        "out_refused": 10,
+        "out_answered": 0
+      }
+    },
+    "per_question": [
+      {
+        "id": "q01",
+        "scope": "in",
+        "question": "What does the 304 Not Modified status code mean?",
+        "refused": false,
+        "seconds": 33.2,
+        "answer": "The 304 Not Modified status code indicates that a conditional GET or HEAD request has been received and would have resulted in a 200 (OK) response if it were not for the fact that the condition evaluated to false [1][2]. In other words, there is no need for the server to transfer a representation of the target resource because the client already has a valid representation [1][2].\n\nThe server generating a 304 response MUST generate any of the following header fields: Content-Location, Date, ETag, and Vary [1][2]. Cache-Control and Expires MAY also be included if their field values might differ from those sent in previous responses for the same variant [1][2][3].\n\nA 304 response is terminated by the end of the header section; it cannot contain content or trailers [1].",
+        "citations": 3,
+        "invalid_markers": 0,
+        "segments": 5,
+        "segments_supported": 5,
+        "segment_detail": [
+          {
+            "text": "The 304 Not Modified status code indicates that a conditional GET or HEAD request has been received and would have resulted in a 200 (OK) response if it were no",
+            "markers": [
+              1,
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.853,
+            "supported": true
+          },
+          {
+            "text": ". In other words, there is no need for the server to transfer a representation of the target resource because the client already has a valid representation",
+            "markers": [
+              1,
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.769,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe server generating a 304 response MUST generate any of the following header fields: Content-Location, Date, ETag, and Vary",
+            "markers": [
+              1,
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.85,
+            "supported": true
+          },
+          {
+            "text": ". Cache-Control and Expires MAY also be included if their field values might differ from those sent in previous responses for the same variant",
+            "markers": [
+              1,
+              2,
+              3
+            ],
+            "overlap": 0.692,
+            "cosine": 0.768,
+            "supported": true
+          },
+          {
+            "text": ".\n\nA 304 response is terminated by the end of the header section; it cannot contain content or trailers",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.739,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q02",
+        "scope": "in",
+        "question": "How does a server tell a client how long to wait before retrying a request?",
+        "refused": false,
+        "seconds": 27.5,
+        "answer": "A server tells a client how long to wait before retrying a request by sending the \"Retry-After\" header field [1][2]. This field can have two values: an HTTP-date or a number of seconds to delay after receiving the response [1][2]. \n\nWhen sent with a 503 (Service Unavailable) response, Retry-After indicates how long the service is expected to be unavailable to the client [3][4][5][6]. When sent with any 3xx (Redirection) response, Retry-After indicates the minimum time that the user agent is asked to wait before issuing the redirected request [1][2][4].\n\nThe value of this field can be either an HTTP-date or a number of seconds to delay after receiving the response [1][2]. A delay-seconds value is a non-negative decimal integer, representing time in seconds [1][2][4]. \n\nTwo examples of its use are:\n\nRetry-After: Fri, 31 Dec 1999 23:59:59 GMT\nRetry-After: 120\n\nIn the latter example, the delay is 2 minutes [1][2][4].",
+        "citations": 6,
+        "invalid_markers": 0,
+        "segments": 7,
+        "segments_supported": 7,
+        "segment_detail": [
+          {
+            "text": "A server tells a client how long to wait before retrying a request by sending the \"Retry-After\" header field",
+            "markers": [
+              1,
+              2
+            ],
+            "overlap": 0.692,
+            "cosine": 0.892,
+            "supported": true
+          },
+          {
+            "text": ". This field can have two values: an HTTP-date or a number of seconds to delay after receiving the response",
+            "markers": [
+              1,
+              2
+            ],
+            "overlap": 0.9,
+            "cosine": 0.823,
+            "supported": true
+          },
+          {
+            "text": ". \n\nWhen sent with a 503 (Service Unavailable) response, Retry-After indicates how long the service is expected to be unavailable to the client",
+            "markers": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "overlap": 0.818,
+            "cosine": 0.872,
+            "supported": true
+          },
+          {
+            "text": ". When sent with any 3xx (Redirection) response, Retry-After indicates the minimum time that the user agent is asked to wait before issuing the redirected reque",
+            "markers": [
+              1,
+              2,
+              4
+            ],
+            "overlap": 1.0,
+            "cosine": 0.878,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe value of this field can be either an HTTP-date or a number of seconds to delay after receiving the response",
+            "markers": [
+              1,
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.829,
+            "supported": true
+          },
+          {
+            "text": ". A delay-seconds value is a non-negative decimal integer, representing time in seconds",
+            "markers": [
+              1,
+              2,
+              4
+            ],
+            "overlap": 1.0,
+            "cosine": 0.757,
+            "supported": true
+          },
+          {
+            "text": ". \n\nTwo examples of its use are:\n\nRetry-After: Fri, 31 Dec 1999 23:59:59 GMT\nRetry-After: 120\n\nIn the latter example, the delay is 2 minutes",
+            "markers": [
+              1,
+              2,
+              4
+            ],
+            "overlap": 1.0,
+            "cosine": 0.837,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q03",
+        "scope": "in",
+        "question": "What is an HTTP ETag and what is it used for?",
+        "refused": false,
+        "seconds": 26.2,
+        "answer": "An HTTP ETag is an \"opaque validator for differentiating between multiple representations of the same resource\" [3]. It provides a way to identify a specific representation of a resource, allowing clients to validate whether they have the most up-to-date version.\n\nETags are used for comparison with other entities from the same resource [1], and can be more reliable than modification dates in certain situations [2][3].\n\nAn ETag consists of an opaque quoted string, possibly prefixed by a weakness indicator (e.g. \"W/\"). The entity tag is sent in the ETag response-header field [1] or as a trailer section [8].",
+        "citations": 4,
+        "invalid_markers": 0,
+        "segments": 5,
+        "segments_supported": 4,
+        "segment_detail": [
+          {
+            "text": "An HTTP ETag is an \"opaque validator for differentiating between multiple representations of the same resource\"",
+            "markers": [
+              3
+            ],
+            "overlap": 1.0,
+            "cosine": 0.811,
+            "supported": true
+          },
+          {
+            "text": ". It provides a way to identify a specific representation of a resource, allowing clients to validate whether they have the most up-to-date version.\n\nETags are ",
+            "markers": [
+              1
+            ],
+            "overlap": 0.235,
+            "cosine": 0.759,
+            "supported": false
+          },
+          {
+            "text": ", and can be more reliable than modification dates in certain situations",
+            "markers": [
+              2,
+              3
+            ],
+            "overlap": 0.857,
+            "cosine": 0.61,
+            "supported": true
+          },
+          {
+            "text": ".\n\nAn ETag consists of an opaque quoted string, possibly prefixed by a weakness indicator (e.g. \"W/\"). The entity tag is sent in the ETag response-header field",
+            "markers": [
+              1
+            ],
+            "overlap": 0.357,
+            "cosine": 0.858,
+            "supported": true
+          },
+          {
+            "text": "or as a trailer section",
+            "markers": [
+              8
+            ],
+            "overlap": 1.0,
+            "cosine": 0.562,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q04",
+        "scope": "in",
+        "question": "What are the semantics of the HTTP GET method?",
+        "refused": false,
+        "seconds": 15.7,
+        "answer": "The semantics of the HTTP GET method are that it is both safe and idempotent, as specified in [5]. This means that a GET request can be safely repeated without causing unintended side effects, and making the same request multiple times will have the same effect as making it once.",
+        "citations": 1,
+        "invalid_markers": 0,
+        "segments": 1,
+        "segments_supported": 1,
+        "segment_detail": [
+          {
+            "text": "The semantics of the HTTP GET method are that it is both safe and idempotent, as specified in",
+            "markers": [
+              5
+            ],
+            "overlap": 0.625,
+            "cosine": 0.696,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q05",
+        "scope": "in",
+        "question": "How does content negotiation work in HTTP?",
+        "refused": false,
+        "seconds": 36.0,
+        "answer": "Content negotiation in HTTP works as follows:\n\n* When content negotiation preferences are sent in a server's response, they influence selection of an appropriate content for subsequent requests [1].\n* The listed preferences are called \"request content negotiation\" because they intend to influence selection of an appropriate content for subsequent requests [1].\n* A request that does not contain the field implies that the sender has no preference on that dimension of negotiation [2].\n* If a content negotiation header field is present in a request and none of the available representations for the response can be considered acceptable according to it, the origin server can either honor the header field by sending a 406 (Not Acceptable) response or disregard the header field [2].\n\nProactive negotiation involves the user agent sending request header fields that describe its preferences, which are then used by the server to select an appropriate representation [3]. The following request header fields are sent by a user agent to engage in proactive negotiation of the response content: Accept, Accept-Charset, Accept-Encoding, and Accept-Language [4].\n\nIf an Accept-Charset header field is present in a request and none of the available representations for the response has a charset that is listed as acceptable, the origin server can either honor the header field by sending a 406 (Not Acceptable) response or disregard the header field [5].\n\nThe Vary header field informs cache recipients that they MUST NOT use this response to satisfy a later request unless the later request has the same values for the listed fields as the original request, and also informs user agent recipients that this response is subject to content negotiation [6].\n\nA 406 (Not Acceptable) status code indicates that the target resource does not have a current representation that would be acceptable to the user agent, according to the proactive negotiation header fields received in the request, and the server is unwilling to supply a default representation [7].",
+        "citations": 7,
+        "invalid_markers": 0,
+        "segments": 9,
+        "segments_supported": 9,
+        "segment_detail": [
+          {
+            "text": "Content negotiation in HTTP works as follows:\n\n* When content negotiation preferences are sent in a server's response, they influence selection of an appropriat",
+            "markers": [
+              1
+            ],
+            "overlap": 0.8,
+            "cosine": 0.832,
+            "supported": true
+          },
+          {
+            "text": ".\n* The listed preferences are called \"request content negotiation\" because they intend to influence selection of an appropriate content for subsequent requests",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.871,
+            "supported": true
+          },
+          {
+            "text": ".\n* A request that does not contain the field implies that the sender has no preference on that dimension of negotiation",
+            "markers": [
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.784,
+            "supported": true
+          },
+          {
+            "text": ".\n* If a content negotiation header field is present in a request and none of the available representations for the response can be considered acceptable accord",
+            "markers": [
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.959,
+            "supported": true
+          },
+          {
+            "text": ".\n\nProactive negotiation involves the user agent sending request header fields that describe its preferences, which are then used by the server to select an app",
+            "markers": [
+              3
+            ],
+            "overlap": 0.75,
+            "cosine": 0.896,
+            "supported": true
+          },
+          {
+            "text": ". The following request header fields are sent by a user agent to engage in proactive negotiation of the response content: Accept, Accept-Charset, Accept-Encodi",
+            "markers": [
+              4
+            ],
+            "overlap": 1.0,
+            "cosine": 0.924,
+            "supported": true
+          },
+          {
+            "text": ".\n\nIf an Accept-Charset header field is present in a request and none of the available representations for the response has a charset that is listed as acceptab",
+            "markers": [
+              5
+            ],
+            "overlap": 1.0,
+            "cosine": 0.991,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe Vary header field informs cache recipients that they MUST NOT use this response to satisfy a later request unless the later request has the same values f",
+            "markers": [
+              6
+            ],
+            "overlap": 0.913,
+            "cosine": 0.924,
+            "supported": true
+          },
+          {
+            "text": ".\n\nA 406 (Not Acceptable) status code indicates that the target resource does not have a current representation that would be acceptable to the user agent, acco",
+            "markers": [
+              7
+            ],
+            "overlap": 1.0,
+            "cosine": 0.956,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q06",
+        "scope": "in",
+        "question": "How does chunked transfer coding work in HTTP/1.1?",
+        "refused": false,
+        "seconds": 24.9,
+        "answer": "Chunked transfer coding works as follows:\n\nA server sends a chunked trailer part in the response, indicating that it is using chunked encoding [3]. The client can indicate its acceptance of trailers by including \"trailers\" in the TE header field [2].\n\nThe client and server use the chunked transfer coding to encode the message-body into chunks. Each chunk starts with a hexadecimal length followed by a CRLF, and ends with a CRLF [1][2].\n\nThe client sends an HTTP request message with a request-target derived from the target URI [5]. The server responds with an HTTP response message containing the chunked encoded message-body [6].\n\nIf the client receives a chunk that is larger than it wishes to process, it MAY discard or truncate the received header fields [8].",
+        "citations": 6,
+        "invalid_markers": 0,
+        "segments": 6,
+        "segments_supported": 4,
+        "segment_detail": [
+          {
+            "text": "Chunked transfer coding works as follows:\n\nA server sends a chunked trailer part in the response, indicating that it is using chunked encoding",
+            "markers": [
+              3
+            ],
+            "overlap": 0.333,
+            "cosine": 0.756,
+            "supported": true
+          },
+          {
+            "text": ". The client can indicate its acceptance of trailers by including \"trailers\" in the TE header field",
+            "markers": [
+              2
+            ],
+            "overlap": 0.286,
+            "cosine": 0.591,
+            "supported": false
+          },
+          {
+            "text": ".\n\nThe client and server use the chunked transfer coding to encode the message-body into chunks. Each chunk starts with a hexadecimal length followed by a CRLF,",
+            "markers": [
+              1,
+              2
+            ],
+            "overlap": 0.188,
+            "cosine": 0.793,
+            "supported": false
+          },
+          {
+            "text": ".\n\nThe client sends an HTTP request message with a request-target derived from the target URI",
+            "markers": [
+              5
+            ],
+            "overlap": 1.0,
+            "cosine": 0.82,
+            "supported": true
+          },
+          {
+            "text": ". The server responds with an HTTP response message containing the chunked encoded message-body",
+            "markers": [
+              6
+            ],
+            "overlap": 0.667,
+            "cosine": 0.792,
+            "supported": true
+          },
+          {
+            "text": ".\n\nIf the client receives a chunk that is larger than it wishes to process, it MAY discard or truncate the received header fields",
+            "markers": [
+              8
+            ],
+            "overlap": 0.917,
+            "cosine": 0.781,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q07",
+        "scope": "in",
+        "question": "What are the stream states in HTTP/2?",
+        "refused": false,
+        "seconds": 26.2,
+        "answer": "The stream states in HTTP/2 are:\n\n* idle [5][6]\n* open [7]\n* half-closed (local) [2]\n* half-closed (remote) [2]\n* reserved (local) [7]\n* reserved (remote) [8]\n\nNote that the excerpt from RFC 9000 \u00a73 does not describe HTTP/2 stream states, but rather QUIC stream states.",
+        "citations": 5,
+        "invalid_markers": 0,
+        "segments": 3,
+        "segments_supported": 3,
+        "segment_detail": [
+          {
+            "text": "The stream states in HTTP/2 are:\n\n* idle",
+            "markers": [
+              5,
+              6
+            ],
+            "overlap": 1.0,
+            "cosine": 0.748,
+            "supported": true
+          },
+          {
+            "text": "* half-closed (local)",
+            "markers": [
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.73,
+            "supported": true
+          },
+          {
+            "text": "* half-closed (remote)",
+            "markers": [
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.763,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q08",
+        "scope": "in",
+        "question": "How do SETTINGS frames work in HTTP/2?",
+        "refused": false,
+        "seconds": 30.6,
+        "answer": "SETTINGS frames convey configuration parameters that affect how endpoints communicate, such as preferences and constraints on peer behavior [1]. They are used to acknowledge the receipt of those settings [1][2]. Each parameter in a SETTINGS frame replaces any existing value for that parameter [1][2].\n\nThe payload of a SETTINGS frame consists of zero or more parameters, each consisting of an unsigned 16-bit setting identifier and an unsigned 32-bit value [6]. The format is as follows:\n\n+-------------------------------+\n|       Identifier (16)         |\n+-------------------------------+-------------------------------+\n|                        Value (32)                             |\n+---------------------------------------------------------------+\n\nA SETTINGS frame MUST be sent by both endpoints at the start of a connection and MAY be sent at any other time by either endpoint over the lifetime of the connection [1][2]. Implementations MUST support all of the settings defined by this specification [1].\n\nSETTINGS frames are acknowledged by the receiving peer. To enable this, the SETTINGS frame defines the ACK flag [1].",
+        "citations": 3,
+        "invalid_markers": 0,
+        "segments": 7,
+        "segments_supported": 7,
+        "segment_detail": [
+          {
+            "text": "SETTINGS frames convey configuration parameters that affect how endpoints communicate, such as preferences and constraints on peer behavior",
+            "markers": [
+              1
+            ],
+            "overlap": 0.923,
+            "cosine": 0.873,
+            "supported": true
+          },
+          {
+            "text": ". They are used to acknowledge the receipt of those settings",
+            "markers": [
+              1,
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.674,
+            "supported": true
+          },
+          {
+            "text": ". Each parameter in a SETTINGS frame replaces any existing value for that parameter",
+            "markers": [
+              1,
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.725,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe payload of a SETTINGS frame consists of zero or more parameters, each consisting of an unsigned 16-bit setting identifier and an unsigned 32-bit value",
+            "markers": [
+              6
+            ],
+            "overlap": 1.0,
+            "cosine": 0.944,
+            "supported": true
+          },
+          {
+            "text": ". The format is as follows:\n\n+-------------------------------+\n|       Identifier (16)         |\n+-------------------------------+------------------------------",
+            "markers": [
+              1,
+              2
+            ],
+            "overlap": 0.824,
+            "cosine": 0.761,
+            "supported": true
+          },
+          {
+            "text": ". Implementations MUST support all of the settings defined by this specification",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.681,
+            "supported": true
+          },
+          {
+            "text": ".\n\nSETTINGS frames are acknowledged by the receiving peer. To enable this, the SETTINGS frame defines the ACK flag",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.853,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q09",
+        "scope": "in",
+        "question": "How does server push work in HTTP/2?",
+        "refused": false,
+        "seconds": 31.2,
+        "answer": "Server push in HTTP/2 works by allowing a server to preemptively send responses, along with corresponding \"promised\" requests, to a client in association with a previous client-initiated request [1][4]. The server synthesizes a request, which it sends as a PUSH_PROMISE frame [4], and then sends the response on a separate stream. \n\nThe PUSH_PROMISE frame includes a header block that contains a complete set of request header fields attributed to the request [7]. Pushed responses are always associated with an explicit request from the client, sent on the same stream as the PUSH_PROMISE frames [7].\n\nA server can push responses that are cacheable and safe, but not those that include a request body or are not cacheable [5]. The server MUST include a value in the \":authority\" pseudo-header field for which it is authoritative [6]. \n\nServer push is disabled by default and can be negotiated independently for each hop using the SETTINGS_ENABLE_PUSH setting [1][2][8].",
+        "citations": 7,
+        "invalid_markers": 0,
+        "segments": 7,
+        "segments_supported": 7,
+        "segment_detail": [
+          {
+            "text": "Server push in HTTP/2 works by allowing a server to preemptively send responses, along with corresponding \"promised\" requests, to a client in association with a",
+            "markers": [
+              1,
+              4
+            ],
+            "overlap": 0.882,
+            "cosine": 0.901,
+            "supported": true
+          },
+          {
+            "text": ". The server synthesizes a request, which it sends as a PUSH_PROMISE frame",
+            "markers": [
+              4
+            ],
+            "overlap": 0.833,
+            "cosine": 0.838,
+            "supported": true
+          },
+          {
+            "text": ", and then sends the response on a separate stream. \n\nThe PUSH_PROMISE frame includes a header block that contains a complete set of request header fields attri",
+            "markers": [
+              7
+            ],
+            "overlap": 0.75,
+            "cosine": 0.864,
+            "supported": true
+          },
+          {
+            "text": ". Pushed responses are always associated with an explicit request from the client, sent on the same stream as the PUSH_PROMISE frames",
+            "markers": [
+              7
+            ],
+            "overlap": 1.0,
+            "cosine": 0.838,
+            "supported": true
+          },
+          {
+            "text": ".\n\nA server can push responses that are cacheable and safe, but not those that include a request body or are not cacheable",
+            "markers": [
+              5
+            ],
+            "overlap": 0.9,
+            "cosine": 0.883,
+            "supported": true
+          },
+          {
+            "text": ". The server MUST include a value in the \":authority\" pseudo-header field for which it is authoritative",
+            "markers": [
+              6
+            ],
+            "overlap": 1.0,
+            "cosine": 0.784,
+            "supported": true
+          },
+          {
+            "text": ". \n\nServer push is disabled by default and can be negotiated independently for each hop using the SETTINGS_ENABLE_PUSH setting",
+            "markers": [
+              1,
+              2,
+              8
+            ],
+            "overlap": 0.889,
+            "cosine": 0.805,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q10",
+        "scope": "in",
+        "question": "How is an HTTP/3 connection established?",
+        "refused": false,
+        "seconds": 27.9,
+        "answer": "An HTTP/3 connection is established as follows:\n\n1. The client initiates a QUIC connection, which implicitly provides address validation for both endpoints [5].\n2. During the handshake, the client and server negotiate the idle timeout, which determines when an idle connection will be closed [3].\n3. The client selects the ALPN token \"h3\" in the TLS handshake to indicate support for HTTP/3 [1].\n4. After the QUIC connection is established, a SETTINGS frame MUST be sent by each endpoint as the initial frame of their respective HTTP control stream [1].\n\nNote that the excerpts do not provide detailed information on how the client discovers an HTTP/3 server or initiates the handshake process.",
+        "citations": 3,
+        "invalid_markers": 0,
+        "segments": 4,
+        "segments_supported": 4,
+        "segment_detail": [
+          {
+            "text": "An HTTP/3 connection is established as follows:\n\n1. The client initiates a QUIC connection, which implicitly provides address validation for both endpoints",
+            "markers": [
+              5
+            ],
+            "overlap": 0.615,
+            "cosine": 0.817,
+            "supported": true
+          },
+          {
+            "text": ".\n2. During the handshake, the client and server negotiate the idle timeout, which determines when an idle connection will be closed",
+            "markers": [
+              3
+            ],
+            "overlap": 0.8,
+            "cosine": 0.814,
+            "supported": true
+          },
+          {
+            "text": ".\n3. The client selects the ALPN token \"h3\" in the TLS handshake to indicate support for HTTP/3",
+            "markers": [
+              1
+            ],
+            "overlap": 0.778,
+            "cosine": 0.816,
+            "supported": true
+          },
+          {
+            "text": ".\n4. After the QUIC connection is established, a SETTINGS frame MUST be sent by each endpoint as the initial frame of their respective HTTP control stream",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.776,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q11",
+        "scope": "in",
+        "question": "How does request prioritization in HTTP/3 differ from HTTP/2?",
+        "refused": false,
+        "seconds": 27.2,
+        "answer": "Request prioritization in HTTP/3 differs from HTTP/2 because HTTP/3 does not provide a means of signaling priority [1]. In contrast, HTTP/2 specifies priority assignments in PRIORITY frames and (optionally) in HEADERS frames [1].\n\nHTTP/2's prioritization scheme was complex and not uniformly implemented [6][7], which is why it has been deprecated. The RFC 7540 priority scheme remains in Section 5.3 of [RFC7540] for reference, but its use is discouraged in favor of alternative schemes like the one described in [HTTP-PRIORITY].",
+        "citations": 3,
+        "invalid_markers": 0,
+        "segments": 3,
+        "segments_supported": 3,
+        "segment_detail": [
+          {
+            "text": "Request prioritization in HTTP/3 differs from HTTP/2 because HTTP/3 does not provide a means of signaling priority",
+            "markers": [
+              1
+            ],
+            "overlap": 0.667,
+            "cosine": 0.888,
+            "supported": true
+          },
+          {
+            "text": ". In contrast, HTTP/2 specifies priority assignments in PRIORITY frames and (optionally) in HEADERS frames",
+            "markers": [
+              1
+            ],
+            "overlap": 0.875,
+            "cosine": 0.924,
+            "supported": true
+          },
+          {
+            "text": ".\n\nHTTP/2's prioritization scheme was complex and not uniformly implemented",
+            "markers": [
+              6,
+              7
+            ],
+            "overlap": 0.833,
+            "cosine": 0.766,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q12",
+        "scope": "in",
+        "question": "What is 0-RTT early data in TLS 1.3 and what are its security risks?",
+        "refused": false,
+        "seconds": 37.1,
+        "answer": "0-RTT early data in TLS 1.3 is a feature that allows clients to send encrypted application data on the first flight of messages, without waiting for the server's response [1]. This is made possible by using a pre-shared key (PSK) to authenticate the server and encrypt the early data.\n\nThe security risks associated with 0-RTT early data include:\n\n* Lack of forward secrecy, as the data is encrypted solely under keys derived from the offered PSK [2].\n* No guarantees of non-replay between connections, which can be mitigated by using mechanisms such as TLS client authentication or inside the application protocol [2].\n\nThe server must verify that certain values are the same as those associated with the selected PSK before accepting early data, including the TLS version number, selected cipher suite, and ALPN protocol [6]. If these requirements are not met, the server may reject the \"early_data\" extension or request that the client send another ClientHello by responding with a HelloRetryRequest [6].\n\nThe client must supply both the \"pre_shared_key\" and \"early_data\" extensions if it opts to send early data, and the parameters for the 0-RTT data are those associated with the PSK in use [7].",
+        "citations": 4,
+        "invalid_markers": 0,
+        "segments": 6,
+        "segments_supported": 6,
+        "segment_detail": [
+          {
+            "text": "0-RTT early data in TLS 1.3 is a feature that allows clients to send encrypted application data on the first flight of messages, without waiting for the server'",
+            "markers": [
+              1
+            ],
+            "overlap": 0.706,
+            "cosine": 0.891,
+            "supported": true
+          },
+          {
+            "text": ". This is made possible by using a pre-shared key (PSK) to authenticate the server and encrypt the early data.\n\nThe security risks associated with 0-RTT early d",
+            "markers": [
+              2
+            ],
+            "overlap": 0.5,
+            "cosine": 0.849,
+            "supported": true
+          },
+          {
+            "text": ".\n* No guarantees of non-replay between connections, which can be mitigated by using mechanisms such as TLS client authentication or inside the application prot",
+            "markers": [
+              2
+            ],
+            "overlap": 0.917,
+            "cosine": 0.719,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe server must verify that certain values are the same as those associated with the selected PSK before accepting early data, including the TLS version numb",
+            "markers": [
+              6
+            ],
+            "overlap": 0.85,
+            "cosine": 0.816,
+            "supported": true
+          },
+          {
+            "text": ". If these requirements are not met, the server may reject the \"early_data\" extension or request that the client send another ClientHello by responding with a H",
+            "markers": [
+              6
+            ],
+            "overlap": 0.846,
+            "cosine": 0.848,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe client must supply both the \"pre_shared_key\" and \"early_data\" extensions if it opts to send early data, and the parameters for the 0-RTT data are those a",
+            "markers": [
+              7
+            ],
+            "overlap": 1.0,
+            "cosine": 0.91,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q13",
+        "scope": "in",
+        "question": "How does session resumption with pre-shared keys work in TLS 1.3?",
+        "refused": false,
+        "seconds": 41.7,
+        "answer": "Session resumption with pre-shared keys in TLS 1.3 works as follows:\n\nWhen a client has a cached session ID set by a pre-TLS 1.3 server [1], it SHOULD set the `legacy_session_id` field to that value in the Client Hello message.\n\nIf the client is attempting PSK key establishment, it SHOULD advertise at least one cipher suite indicating a Hash associated with the PSK [1].\n\nThe client can use the cached session ID to negotiate the use of the associated PSK. If the server accepts the PSK, then the security context of the new connection is cryptographically tied to the original connection and the key derived from the initial handshake is used to bootstrap the cryptographic state instead of a full handshake [3].\n\nThe client can also offer resumption via a PSK by supplying a \"key_share\" extension to the server to allow the server to decline resumption and fall back to a full handshake, if needed. The server responds with a \"pre_shared_key\" extension to negotiate the use of PSK key establishment and can (as shown here) respond with a \"key_share\" extension to do (EC)DHE key establishment, thus providing forward secrecy [4].\n\nWhen using an out-of-band provisioned pre-shared secret, a critical consideration is using sufficient entropy during the key generation, as discussed in [RFC4086] [5].",
+        "citations": 4,
+        "invalid_markers": 0,
+        "segments": 5,
+        "segments_supported": 4,
+        "segment_detail": [
+          {
+            "text": "Session resumption with pre-shared keys in TLS 1.3 works as follows:\n\nWhen a client has a cached session ID set by a pre-TLS 1.3 server",
+            "markers": [
+              1
+            ],
+            "overlap": 0.833,
+            "cosine": 0.82,
+            "supported": true
+          },
+          {
+            "text": ", it SHOULD set the `legacy_session_id` field to that value in the Client Hello message.\n\nIf the client is attempting PSK key establishment, it SHOULD advertise",
+            "markers": [
+              1
+            ],
+            "overlap": 0.895,
+            "cosine": 0.84,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe client can use the cached session ID to negotiate the use of the associated PSK. If the server accepts the PSK, then the security context of the new conn",
+            "markers": [
+              3
+            ],
+            "overlap": 0.962,
+            "cosine": 0.875,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe client can also offer resumption via a PSK by supplying a \"key_share\" extension to the server to allow the server to decline resumption and fall back to ",
+            "markers": [
+              4
+            ],
+            "overlap": 0.935,
+            "cosine": 0.931,
+            "supported": true
+          },
+          {
+            "text": ".\n\nWhen using an out-of-band provisioned pre-shared secret, a critical consideration is using sufficient entropy during the key generation, as discussed in [RFC",
+            "markers": [
+              5
+            ],
+            "overlap": 0.0,
+            "cosine": 0.654,
+            "supported": false
+          }
+        ]
+      },
+      {
+        "id": "q14",
+        "scope": "in",
+        "question": "What is a HelloRetryRequest in TLS 1.3 and when is it sent?",
+        "refused": false,
+        "seconds": 32.5,
+        "answer": "A HelloRetryRequest in TLS 1.3 is sent by a server in response to a ClientHello message if it can find an acceptable set of parameters but the ClientHello does not contain sufficient information to proceed with the handshake [1]. The server will send this message if it needs additional information from the client, such as a specific version or cipher suite.\n\nThe HelloRetryRequest has the same format as a ServerHello message and contains the same fields, including legacy_version, legacy_session_id_echo, cipher_suite, and legacy_compression_method [1].\n\nUpon receipt of a HelloRetryRequest, the client MUST check the legacy_version, legacy_session_id_echo, cipher_suite, and legacy_compression_method as specified in Section 4.1.3 and then process the extensions, starting with determining the version using \"supported_versions\" [2]. If the HelloRetryRequest would not result in any change in the ClientHello, the client MUST abort the handshake with an \"illegal_parameter\" alert [2].\n\nThe client will send a second updated ClientHello after processing all extensions in the HelloRetryRequest [2].",
+        "citations": 2,
+        "invalid_markers": 0,
+        "segments": 5,
+        "segments_supported": 5,
+        "segment_detail": [
+          {
+            "text": "A HelloRetryRequest in TLS 1.3 is sent by a server in response to a ClientHello message if it can find an acceptable set of parameters but the ClientHello does ",
+            "markers": [
+              1
+            ],
+            "overlap": 0.941,
+            "cosine": 0.848,
+            "supported": true
+          },
+          {
+            "text": ". The server will send this message if it needs additional information from the client, such as a specific version or cipher suite.\n\nThe HelloRetryRequest has t",
+            "markers": [
+              1
+            ],
+            "overlap": 0.667,
+            "cosine": 0.927,
+            "supported": true
+          },
+          {
+            "text": ".\n\nUpon receipt of a HelloRetryRequest, the client MUST check the legacy_version, legacy_session_id_echo, cipher_suite, and legacy_compression_method as specifi",
+            "markers": [
+              2
+            ],
+            "overlap": 0.5,
+            "cosine": 0.828,
+            "supported": true
+          },
+          {
+            "text": ". If the HelloRetryRequest would not result in any change in the ClientHello, the client MUST abort the handshake with an \"illegal_parameter\" alert",
+            "markers": [
+              2
+            ],
+            "overlap": 0.8,
+            "cosine": 0.819,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe client will send a second updated ClientHello after processing all extensions in the HelloRetryRequest",
+            "markers": [
+              2
+            ],
+            "overlap": 0.8,
+            "cosine": 0.805,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q15",
+        "scope": "in",
+        "question": "How is the key schedule derived in TLS 1.3?",
+        "refused": false,
+        "seconds": 35.8,
+        "answer": "The key schedule is derived using HKDF-Extract and HKDF-Expand functions as defined for HKDF [RFC5869] [1][2]. The general pattern for adding a new secret is to use HKDF-Extract with the Salt being the current secret state and the Input Keying Material (IKM) being the new secret to be added [3].\n\nThe key derivation process makes use of the following functions:\n\n*   HKDF-Expand-Label(Secret, Label, Context, Length) = HKDF-Expand(Secret, HkdfLabel, Length)\n    Where HkdfLabel is specified as:\n        struct {\n            uint16 length = Length;\n            opaque label<7..255> = \"tls13 \" + Label;\n            opaque context<0..255> = Context;\n        } HkdfLabel [2]\n*   Derive-Secret(Secret, Label, Messages) =\n    HKDF-Expand-Label(Secret, Label,\n                      Transcript-Hash(Messages), Hash.length)\n\nThe labels specified in this document are all ASCII strings and do not include a trailing NUL byte. Note that with common hash functions, any label longer than 12 characters requires an additional iteration of the hash function to compute [2].\n\nMultiple applications of HKDF-Expand to some of the same inputs are allowed as long as these are differentiated via the key and/or the labels [4].",
+        "citations": 4,
+        "invalid_markers": 0,
+        "segments": 5,
+        "segments_supported": 5,
+        "segment_detail": [
+          {
+            "text": "The key schedule is derived using HKDF-Extract and HKDF-Expand functions as defined for HKDF [RFC5869]",
+            "markers": [
+              1,
+              2
+            ],
+            "overlap": 0.889,
+            "cosine": 0.84,
+            "supported": true
+          },
+          {
+            "text": ". The general pattern for adding a new secret is to use HKDF-Extract with the Salt being the current secret state and the Input Keying Material (IKM) being the ",
+            "markers": [
+              3
+            ],
+            "overlap": 0.312,
+            "cosine": 0.719,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe key derivation process makes use of the following functions:\n\n*   HKDF-Expand-Label(Secret, Label, Context, Length) = HKDF-Expand(Secret, HkdfLabel, Leng",
+            "markers": [
+              2
+            ],
+            "overlap": 0.952,
+            "cosine": 0.934,
+            "supported": true
+          },
+          {
+            "text": "*   Derive-Secret(Secret, Label, Messages) =\n    HKDF-Expand-Label(Secret, Label,\n                      Transcript-Hash(Messages), Hash.length)\n\nThe labels spec",
+            "markers": [
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.922,
+            "supported": true
+          },
+          {
+            "text": ".\n\nMultiple applications of HKDF-Expand to some of the same inputs are allowed as long as these are differentiated via the key and/or the labels",
+            "markers": [
+              4
+            ],
+            "overlap": 1.0,
+            "cosine": 0.844,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q16",
+        "scope": "in",
+        "question": "How does flow control work in QUIC?",
+        "refused": false,
+        "seconds": 28.4,
+        "answer": "Flow control in QUIC is implemented to prevent a sender from overwhelming a receiver or consuming excessive memory [1]. It controls the maximum amount of data that can be sent on a stream and across all streams at any time, as described in Sections 4.1 and 4.2 of RFC 9000.\n\nA receiver can limit the concurrency within a connection by controlling the maximum cumulative number of streams that its peer can initiate [1]. Data sent in CRYPTO frames is not flow controlled in the same way as stream data [1].\n\nThe congestion controller specified in Section 7 of RFC 9002 uses the congestion window to prevent excessive sending of packets. An endpoint MUST NOT send a packet if it would cause bytes_in_flight (see Appendix B.2) to be larger than the congestion window, unless the packet is sent on a PTO timer expiration or when entering recovery [7].",
+        "citations": 2,
+        "invalid_markers": 0,
+        "segments": 4,
+        "segments_supported": 4,
+        "segment_detail": [
+          {
+            "text": "Flow control in QUIC is implemented to prevent a sender from overwhelming a receiver or consuming excessive memory",
+            "markers": [
+              1
+            ],
+            "overlap": 0.818,
+            "cosine": 0.885,
+            "supported": true
+          },
+          {
+            "text": ". It controls the maximum amount of data that can be sent on a stream and across all streams at any time, as described in Sections 4.1 and 4.2 of RFC 9000.\n\nA r",
+            "markers": [
+              1
+            ],
+            "overlap": 0.88,
+            "cosine": 0.85,
+            "supported": true
+          },
+          {
+            "text": ". Data sent in CRYPTO frames is not flow controlled in the same way as stream data",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.701,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe congestion controller specified in Section 7 of RFC 9002 uses the congestion window to prevent excessive sending of packets. An endpoint MUST NOT send a ",
+            "markers": [
+              7
+            ],
+            "overlap": 0.821,
+            "cosine": 0.853,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q17",
+        "scope": "in",
+        "question": "How does QUIC handle connection migration when a client changes network?",
+        "refused": false,
+        "seconds": 23.6,
+        "answer": "When a client changes network, QUIC handles connection migration as follows:\n\n* The client can continue operating by using the connection migration features defined in Section 9 of [RFC9000] [2].\n* Connection IDs allow connections to survive changes to endpoint addresses (IP address and port) [3][RFC 9000 \u00a79].\n* Endpoints MUST NOT initiate connection migration before the handshake is confirmed [3][RFC 9000 \u00a79].\n* If the peer's address changes, the endpoint MUST perform path validation unless it has previously validated that address [3][RFC 9000 \u00a79].\n\nConnection migration in QUIC allows connections to continue operating after changes in network topology or address mappings.",
+        "citations": 2,
+        "invalid_markers": 0,
+        "segments": 4,
+        "segments_supported": 4,
+        "segment_detail": [
+          {
+            "text": "When a client changes network, QUIC handles connection migration as follows:\n\n* The client can continue operating by using the connection migration features def",
+            "markers": [
+              2
+            ],
+            "overlap": 0.5,
+            "cosine": 0.865,
+            "supported": true
+          },
+          {
+            "text": ".\n* Connection IDs allow connections to survive changes to endpoint addresses (IP address and port)",
+            "markers": [
+              3
+            ],
+            "overlap": 0.9,
+            "cosine": 0.83,
+            "supported": true
+          },
+          {
+            "text": "[RFC 9000 \u00a79].\n* Endpoints MUST NOT initiate connection migration before the handshake is confirmed",
+            "markers": [
+              3
+            ],
+            "overlap": 0.778,
+            "cosine": 0.812,
+            "supported": true
+          },
+          {
+            "text": "[RFC 9000 \u00a79].\n* If the peer's address changes, the endpoint MUST perform path validation unless it has previously validated that address",
+            "markers": [
+              3
+            ],
+            "overlap": 0.833,
+            "cosine": 0.777,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q18",
+        "scope": "in",
+        "question": "What are QUIC streams and how are they opened?",
+        "refused": false,
+        "seconds": 34.7,
+        "answer": "QUIC streams provide a lightweight, ordered byte-stream abstraction to an application [1]. Streams can be unidirectional or bidirectional and are created by sending data [1].\n\nA single STREAM frame can open, carry data for, and close a stream [1]. Streams can also be long-lived and last the entire duration of a connection [1].\n\nStreams can be opened concurrently and interleaved with other streams. An arbitrary number of streams can operate concurrently, subject to flow control constraints and stream limits [1].\n\nA bidirectional stream is opened when either endpoint sends a MAX_STREAM_DATA or STOP_SENDING frame for that stream [8]. For an unopened stream, receiving a MAX_STREAM_DATA frame indicates the remote peer has opened the stream and providing flow control credit, while receiving a STOP_SENDING frame indicates the remote peer no longer wishes to receive data on this stream [8].\n\nThe number of active streams is limited by the initial_max_streams_bidi and initial_max_streams_uni transport parameters as updated by any received MAX_STREAMS frames [2].",
+        "citations": 3,
+        "invalid_markers": 0,
+        "segments": 8,
+        "segments_supported": 8,
+        "segment_detail": [
+          {
+            "text": "QUIC streams provide a lightweight, ordered byte-stream abstraction to an application",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.828,
+            "supported": true
+          },
+          {
+            "text": ". Streams can be unidirectional or bidirectional and are created by sending data",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.792,
+            "supported": true
+          },
+          {
+            "text": ".\n\nA single STREAM frame can open, carry data for, and close a stream",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.738,
+            "supported": true
+          },
+          {
+            "text": ". Streams can also be long-lived and last the entire duration of a connection",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.722,
+            "supported": true
+          },
+          {
+            "text": ".\n\nStreams can be opened concurrently and interleaved with other streams. An arbitrary number of streams can operate concurrently, subject to flow control const",
+            "markers": [
+              1
+            ],
+            "overlap": 0.923,
+            "cosine": 0.784,
+            "supported": true
+          },
+          {
+            "text": ".\n\nA bidirectional stream is opened when either endpoint sends a MAX_STREAM_DATA or STOP_SENDING frame for that stream",
+            "markers": [
+              8
+            ],
+            "overlap": 0.889,
+            "cosine": 0.81,
+            "supported": true
+          },
+          {
+            "text": ". For an unopened stream, receiving a MAX_STREAM_DATA frame indicates the remote peer has opened the stream and providing flow control credit, while receiving a",
+            "markers": [
+              8
+            ],
+            "overlap": 0.947,
+            "cosine": 0.829,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe number of active streams is limited by the initial_max_streams_bidi and initial_max_streams_uni transport parameters as updated by any received MAX_STREA",
+            "markers": [
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.756,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q19",
+        "scope": "in",
+        "question": "How does version negotiation work in QUIC?",
+        "refused": false,
+        "seconds": 25.3,
+        "answer": "Version negotiation in QUIC works as follows:\n\n* A client initiates a connection using a specific version [2][3].\n* If the server does not support the client's chosen version, it responds with a Version Negotiation packet [1][4][5].\n* The Version Negotiation packet contains a list of supported versions by the server [4][5].\n* The client then selects an acceptable version from the list and sends a new Initial packet using that version [6].\n\nNote: The exact process for performing version negotiation is left as future work, but it must ensure robustness against version downgrade attacks [1].",
+        "citations": 6,
+        "invalid_markers": 0,
+        "segments": 5,
+        "segments_supported": 5,
+        "segment_detail": [
+          {
+            "text": "Version negotiation in QUIC works as follows:\n\n* A client initiates a connection using a specific version",
+            "markers": [
+              2,
+              3
+            ],
+            "overlap": 0.556,
+            "cosine": 0.871,
+            "supported": true
+          },
+          {
+            "text": ".\n* If the server does not support the client's chosen version, it responds with a Version Negotiation packet",
+            "markers": [
+              1,
+              4,
+              5
+            ],
+            "overlap": 0.625,
+            "cosine": 0.833,
+            "supported": true
+          },
+          {
+            "text": ".\n* The Version Negotiation packet contains a list of supported versions by the server",
+            "markers": [
+              4,
+              5
+            ],
+            "overlap": 0.875,
+            "cosine": 0.828,
+            "supported": true
+          },
+          {
+            "text": ".\n* The client then selects an acceptable version from the list and sends a new Initial packet using that version",
+            "markers": [
+              6
+            ],
+            "overlap": 0.8,
+            "cosine": 0.793,
+            "supported": true
+          },
+          {
+            "text": ".\n\nNote: The exact process for performing version negotiation is left as future work, but it must ensure robustness against version downgrade attacks",
+            "markers": [
+              1
+            ],
+            "overlap": 0.667,
+            "cosine": 0.775,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q20",
+        "scope": "in",
+        "question": "What fields are in the DNS message header?",
+        "refused": false,
+        "seconds": 26.1,
+        "answer": "The DNS message header's fields are not explicitly listed in the provided excerpts. However, [1] mentions that the second full 16-bit word is divided into a 4-bit OPCODE, a 4-bit RCODE, and a number of 1-bit flags.\n\nNote: The question asks for the fields in the DNS message header, but the excerpts do not provide an explicit list of these fields.",
+        "citations": 1,
+        "invalid_markers": 0,
+        "segments": 1,
+        "segments_supported": 1,
+        "segment_detail": [
+          {
+            "text": "The DNS message header's fields are not explicitly listed in the provided excerpts. However,",
+            "markers": [
+              1
+            ],
+            "overlap": 0.333,
+            "cosine": 0.724,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q21",
+        "scope": "in",
+        "question": "How does DNS message compression work?",
+        "refused": false,
+        "seconds": 28.8,
+        "answer": "DNS message compression works by replacing some or all of a resource record's name with a compact two-byte reference to an earlier appearance of that data in the message [1]. This is done for names within the rdata of specific types, such as NS, CNAME, PTR, DNAME, SOA, MX, AFSDB, RT, KX, RP, PX, SRV, and NSEC [1].\n\nThe compressed name is represented by a two-byte reference to an earlier appearance of that data in the message. The format of this reference is not specified in the provided excerpts.\n\nCompression applies to both Multicast DNS responses and queries, as well as to Known Answers in the Answer Section or probe tiebreaking data in the Authority Section [1].\n\nImplementations receiving Multicast DNS messages must correctly decode compressed names appearing in the Question Section, and compressed names of resource records appearing in other sections [1].",
+        "citations": 1,
+        "invalid_markers": 0,
+        "segments": 4,
+        "segments_supported": 4,
+        "segment_detail": [
+          {
+            "text": "DNS message compression works by replacing some or all of a resource record's name with a compact two-byte reference to an earlier appearance of that data in th",
+            "markers": [
+              1
+            ],
+            "overlap": 0.938,
+            "cosine": 0.849,
+            "supported": true
+          },
+          {
+            "text": ". This is done for names within the rdata of specific types, such as NS, CNAME, PTR, DNAME, SOA, MX, AFSDB, RT, KX, RP, PX, SRV, and NSEC",
+            "markers": [
+              1
+            ],
+            "overlap": 0.846,
+            "cosine": 0.72,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe compressed name is represented by a two-byte reference to an earlier appearance of that data in the message. The format of this reference is not specifie",
+            "markers": [
+              1
+            ],
+            "overlap": 0.75,
+            "cosine": 0.89,
+            "supported": true
+          },
+          {
+            "text": ".\n\nImplementations receiving Multicast DNS messages must correctly decode compressed names appearing in the Question Section, and compressed names of resource r",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.899,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q22",
+        "scope": "in",
+        "question": "What media type is used by DNS over HTTPS?",
+        "refused": false,
+        "seconds": 19.7,
+        "answer": "The media type used by DNS over HTTPS (DoH) is \"application/dns-message\" [1][2].",
+        "citations": 2,
+        "invalid_markers": 0,
+        "segments": 1,
+        "segments_supported": 1,
+        "segment_detail": [
+          {
+            "text": "The media type used by DNS over HTTPS (DoH) is \"application/dns-message\"",
+            "markers": [
+              1,
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.873,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q23",
+        "scope": "in",
+        "question": "How does the OAuth 2.0 authorization code grant flow work?",
+        "refused": false,
+        "seconds": 40.2,
+        "answer": "The OAuth 2.0 authorization code grant flow works as follows:\n\n1. The client initiates the flow by directing the resource owner's user-agent to the authorization endpoint [2][RFC 6749 \u00a74.1].\n2. The client includes its client identifier, requested scope, local state, and a redirection URI to which the authorization server will send the user-agent back once access is granted (or denied) [2][RFC 6749 \u00a74.1].\n3. The authorization server authenticates the resource owner (via the user-agent) and establishes whether the resource owner grants or denies the client's access request [2][RFC 6749 \u00a74.1].\n4. Assuming the resource owner grants access, the authorization server redirects the user-agent back to the client using the redirection URI provided earlier, including an authorization code and any local state provided by the client [2][RFC 6749 \u00a74.1].\n5. The client requests an access token from the authorization server's token endpoint by including the authorization code received in the previous step, authenticating with the authorization server, and including the redirection URI used to obtain the authorization code for verification [2][RFC 6749 \u00a74.1].\n6. The authorization server authenticates the client, validates the authorization code, and ensures that the redirection URI received matches the URI used to redirect the client in step (C). If valid, the authorization server responds back with an access token and, optionally, a refresh token [2][RFC 6749 \u00a74.1].",
+        "citations": 1,
+        "invalid_markers": 0,
+        "segments": 6,
+        "segments_supported": 6,
+        "segment_detail": [
+          {
+            "text": "The OAuth 2.0 authorization code grant flow works as follows:\n\n1. The client initiates the flow by directing the resource owner's user-agent to the authorizatio",
+            "markers": [
+              2
+            ],
+            "overlap": 0.786,
+            "cosine": 0.85,
+            "supported": true
+          },
+          {
+            "text": "[RFC 6749 \u00a74.1].\n2. The client includes its client identifier, requested scope, local state, and a redirection URI to which the authorization server will send t",
+            "markers": [
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.901,
+            "supported": true
+          },
+          {
+            "text": "[RFC 6749 \u00a74.1].\n3. The authorization server authenticates the resource owner (via the user-agent) and establishes whether the resource owner grants or denies t",
+            "markers": [
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.838,
+            "supported": true
+          },
+          {
+            "text": "[RFC 6749 \u00a74.1].\n4. Assuming the resource owner grants access, the authorization server redirects the user-agent back to the client using the redirection URI pr",
+            "markers": [
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.898,
+            "supported": true
+          },
+          {
+            "text": "[RFC 6749 \u00a74.1].\n5. The client requests an access token from the authorization server's token endpoint by including the authorization code received in the previ",
+            "markers": [
+              2
+            ],
+            "overlap": 0.947,
+            "cosine": 0.886,
+            "supported": true
+          },
+          {
+            "text": "[RFC 6749 \u00a74.1].\n6. The authorization server authenticates the client, validates the authorization code, and ensures that the redirection URI received matches t",
+            "markers": [
+              2
+            ],
+            "overlap": 1.0,
+            "cosine": 0.872,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q24",
+        "scope": "in",
+        "question": "What are refresh tokens for in OAuth 2.0?",
+        "refused": false,
+        "seconds": 18.5,
+        "answer": "Refresh tokens are used to obtain new access tokens when the current one expires or is invalid.\n\n[1] RFC 6750 \u00a74 (Example Access Token Response):\n   ...\n   \"refresh_token\":\"tGzv3JOkF0XG5Qx2TlKWIA\"\n   \nThis excerpt shows an example of a refresh token being returned in an access token response.",
+        "citations": 1,
+        "invalid_markers": 0,
+        "segments": 1,
+        "segments_supported": 0,
+        "segment_detail": [
+          {
+            "text": "Refresh tokens are used to obtain new access tokens when the current one expires or is invalid.",
+            "markers": [
+              1
+            ],
+            "overlap": 0.111,
+            "cosine": 0.735,
+            "supported": false
+          }
+        ]
+      },
+      {
+        "id": "q25",
+        "scope": "in",
+        "question": "How does PKCE protect the OAuth authorization code flow?",
+        "refused": false,
+        "seconds": 23.5,
+        "answer": "PKCE protects the OAuth authorization code flow by:\n\n* Requiring clients to send a \"code_challenge\" parameter, which is a transformed version of the \"code_verifier\", as part of the Authorization Request [6].\n* Requiring servers to verify the \"code_verifier\" sent in the Token Endpoint request against the previously issued \"Authorization Code\" using the same transformation method specified in the \"code_challenge_method\" parameter [5].\n* Preventing clients from intercepting and reusing authorization codes by requiring them to send a unique \"code_verifier\" for each authorization code [6].\n\nIf a server requires PKCE but does not receive the \"code_challenge\" parameter, it MUST return an error response with \"error\" value set to \"invalid_request\" [2].",
+        "citations": 3,
+        "invalid_markers": 0,
+        "segments": 4,
+        "segments_supported": 3,
+        "segment_detail": [
+          {
+            "text": "PKCE protects the OAuth authorization code flow by:\n\n* Requiring clients to send a \"code_challenge\" parameter, which is a transformed version of the \"code_verif",
+            "markers": [
+              6
+            ],
+            "overlap": 0.375,
+            "cosine": 0.823,
+            "supported": true
+          },
+          {
+            "text": ".\n* Requiring servers to verify the \"code_verifier\" sent in the Token Endpoint request against the previously issued \"Authorization Code\" using the same transfo",
+            "markers": [
+              5
+            ],
+            "overlap": 0.611,
+            "cosine": 0.895,
+            "supported": true
+          },
+          {
+            "text": ".\n* Preventing clients from intercepting and reusing authorization codes by requiring them to send a unique \"code_verifier\" for each authorization code",
+            "markers": [
+              6
+            ],
+            "overlap": 0.167,
+            "cosine": 0.781,
+            "supported": false
+          },
+          {
+            "text": ".\n\nIf a server requires PKCE but does not receive the \"code_challenge\" parameter, it MUST return an error response with \"error\" value set to \"invalid_request\"",
+            "markers": [
+              2
+            ],
+            "overlap": 0.769,
+            "cosine": 0.873,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q26",
+        "scope": "in",
+        "question": "What does the exp claim in a JWT mean?",
+        "refused": false,
+        "seconds": 18.3,
+        "answer": "The exp claim in a JWT means the expiration time on or after which the JWT MUST NOT be accepted for processing [1]. Its value MUST be a number containing a NumericDate value, and implementers MAY provide for some small leeway to account for clock skew [1].",
+        "citations": 1,
+        "invalid_markers": 0,
+        "segments": 2,
+        "segments_supported": 2,
+        "segment_detail": [
+          {
+            "text": "The exp claim in a JWT means the expiration time on or after which the JWT MUST NOT be accepted for processing",
+            "markers": [
+              1
+            ],
+            "overlap": 0.889,
+            "cosine": 0.908,
+            "supported": true
+          },
+          {
+            "text": ". Its value MUST be a number containing a NumericDate value, and implementers MAY provide for some small leeway to account for clock skew",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.716,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q27",
+        "scope": "in",
+        "question": "What does the Secure attribute on an HTTP cookie do?",
+        "refused": false,
+        "seconds": 23.2,
+        "answer": "The Secure attribute on an HTTP cookie limits its scope to \"secure\" channels, where a secure channel is typically defined as HTTP over Transport Layer Security (TLS) [RFC2818]. The user agent will only include the cookie in an HTTP request if it is transmitted over such a secure channel [1].\n\nThis means that the Secure attribute protects the confidentiality of the cookie, but not its integrity. An active network attacker can still overwrite Secure cookies from an insecure channel [1].",
+        "citations": 1,
+        "invalid_markers": 0,
+        "segments": 2,
+        "segments_supported": 2,
+        "segment_detail": [
+          {
+            "text": "The Secure attribute on an HTTP cookie limits its scope to \"secure\" channels, where a secure channel is typically defined as HTTP over Transport Layer Security ",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.945,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThis means that the Secure attribute protects the confidentiality of the cookie, but not its integrity. An active network attacker can still overwrite Secure",
+            "markers": [
+              1
+            ],
+            "overlap": 0.812,
+            "cosine": 0.909,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q28",
+        "scope": "in",
+        "question": "What protection does the HttpOnly cookie attribute provide?",
+        "refused": false,
+        "seconds": 19.7,
+        "answer": "The HttpOnly cookie attribute provides protection by instructing the user agent to omit the cookie when providing access to cookies via \"non-HTTP\" APIs [1]. This means that scripts running in a web browser will not be able to access cookies marked as HttpOnly, thereby preventing potential attacks such as cross-site scripting (XSS).",
+        "citations": 1,
+        "invalid_markers": 0,
+        "segments": 1,
+        "segments_supported": 1,
+        "segment_detail": [
+          {
+            "text": "The HttpOnly cookie attribute provides protection by instructing the user agent to omit the cookie when providing access to cookies via \"non-HTTP\" APIs",
+            "markers": [
+              1
+            ],
+            "overlap": 0.8,
+            "cosine": 0.898,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q29",
+        "scope": "in",
+        "question": "How is a TCP connection established with the three-way handshake?",
+        "refused": false,
+        "seconds": 34.9,
+        "answer": "A TCP connection is established with the three-way handshake, which involves the exchange of SYN (synchronize) segments between the client and server.\n\nThe procedure starts when one TCP peer initiates the connection by sending a SYN segment [1]. The receiving TCP peer responds with a SYN-ACK (acknowledgment) segment, which includes its own initial sequence number [3][4].\n\nThe client then sends an ACK (acknowledgment) segment to confirm receipt of the server's initial sequence number and to acknowledge its own initial sequence number [3][4].\n\nThis three-way handshake is necessary because sequence numbers are not tied to a global clock in the network, and TCP implementations may have different mechanisms for picking the ISNs [6]. The receiver of the first SYN has no way of knowing whether the segment was an old one or not, unless it remembers the last sequence number used on the connection (which is not always possible), and so it must ask the sender to verify this SYN.\n\nThe three-way handshake also helps prevent old duplicate connection initiations from causing confusion [1].",
+        "citations": 4,
+        "invalid_markers": 0,
+        "segments": 5,
+        "segments_supported": 5,
+        "segment_detail": [
+          {
+            "text": "A TCP connection is established with the three-way handshake, which involves the exchange of SYN (synchronize) segments between the client and server.\n\nThe proc",
+            "markers": [
+              1
+            ],
+            "overlap": 0.6,
+            "cosine": 0.925,
+            "supported": true
+          },
+          {
+            "text": ". The receiving TCP peer responds with a SYN-ACK (acknowledgment) segment, which includes its own initial sequence number",
+            "markers": [
+              3,
+              4
+            ],
+            "overlap": 0.583,
+            "cosine": 0.849,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe client then sends an ACK (acknowledgment) segment to confirm receipt of the server's initial sequence number and to acknowledge its own initial sequence ",
+            "markers": [
+              3,
+              4
+            ],
+            "overlap": 0.429,
+            "cosine": 0.746,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThis three-way handshake is necessary because sequence numbers are not tied to a global clock in the network, and TCP implementations may have different mech",
+            "markers": [
+              6
+            ],
+            "overlap": 1.0,
+            "cosine": 0.914,
+            "supported": true
+          },
+          {
+            "text": ". The receiver of the first SYN has no way of knowing whether the segment was an old one or not, unless it remembers the last sequence number used on the connec",
+            "markers": [
+              1
+            ],
+            "overlap": 0.345,
+            "cosine": 0.881,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q30",
+        "scope": "in",
+        "question": "How does TCP slow start work?",
+        "refused": false,
+        "seconds": 28.9,
+        "answer": "TCP slow start works as follows:\n\n- The slow start algorithm is used when the congestion window (cwnd) is less than the slow start threshold (ssthresh) [1].\n- During slow start, TCP increments cwnd by at most SMSS bytes for each ACK received that cumulatively acknowledges new data [1].\n- Slow start ends when cwnd exceeds ssthresh or when congestion is observed [1].\n\nNote: The excerpts do not provide a detailed explanation of the initial value of cwnd and how it is set.",
+        "citations": 1,
+        "invalid_markers": 0,
+        "segments": 3,
+        "segments_supported": 3,
+        "segment_detail": [
+          {
+            "text": "TCP slow start works as follows:\n\n- The slow start algorithm is used when the congestion window (cwnd) is less than the slow start threshold (ssthresh)",
+            "markers": [
+              1
+            ],
+            "overlap": 0.615,
+            "cosine": 0.879,
+            "supported": true
+          },
+          {
+            "text": ".\n- During slow start, TCP increments cwnd by at most SMSS bytes for each ACK received that cumulatively acknowledges new data",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.898,
+            "supported": true
+          },
+          {
+            "text": ".\n- Slow start ends when cwnd exceeds ssthresh or when congestion is observed",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.836,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q31",
+        "scope": "in",
+        "question": "What is TCP fast retransmit and when does it trigger?",
+        "refused": false,
+        "seconds": 24.4,
+        "answer": "TCP fast retransmit triggers when three duplicate ACKs are received, as defined in [1][6]. The sender uses this indication that a segment has been lost to perform a retransmission without waiting for the retransmission timer to expire.\n\nThe fast recovery algorithm governs the transmission of new data until a non-duplicate ACK arrives. During this time, cwnd is artificially inflated by SMSS for each additional duplicate ACK received after the third [6].",
+        "citations": 2,
+        "invalid_markers": 0,
+        "segments": 2,
+        "segments_supported": 2,
+        "segment_detail": [
+          {
+            "text": "TCP fast retransmit triggers when three duplicate ACKs are received, as defined in",
+            "markers": [
+              1,
+              6
+            ],
+            "overlap": 0.778,
+            "cosine": 0.895,
+            "supported": true
+          },
+          {
+            "text": ". The sender uses this indication that a segment has been lost to perform a retransmission without waiting for the retransmission timer to expire.\n\nThe fast rec",
+            "markers": [
+              6
+            ],
+            "overlap": 0.5,
+            "cosine": 0.858,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q32",
+        "scope": "in",
+        "question": "Why must WebSocket clients mask the frames they send to the server?",
+        "refused": false,
+        "seconds": 35.4,
+        "answer": "WebSocket clients must mask the frames they send to the server because it prevents authors of malicious applications from selecting the bytes that appear on the wire [3][4]. The masking key is a 32-bit value chosen at random by the client, and it is used to mask the \"Payload data\" which includes both \"Extension data\" and \"Application data\" [3][4].\n\nThe masking process involves XORing each octet of the original data with the corresponding octet of the masking key [4]. This ensures that the contents of the frame are not modifiable by the remote script (application) once transmission begins [2].\n\nMasking is essential to prevent attacks on infrastructure, such as poisoning attacks where a client or server sends data that appears to be an HTTP request [2]. Non-compliant HTTP proxies will still be vulnerable to these types of attacks even with masking in place [2].\n\nThe payload length does not include the length of the masking key, and it is the length of the \"Payload data\" only [6].",
+        "citations": 4,
+        "invalid_markers": 0,
+        "segments": 7,
+        "segments_supported": 7,
+        "segment_detail": [
+          {
+            "text": "WebSocket clients must mask the frames they send to the server because it prevents authors of malicious applications from selecting the bytes that appear on the",
+            "markers": [
+              3,
+              4
+            ],
+            "overlap": 0.625,
+            "cosine": 0.812,
+            "supported": true
+          },
+          {
+            "text": ". The masking key is a 32-bit value chosen at random by the client, and it is used to mask the \"Payload data\" which includes both \"Extension data\" and \"Applicat",
+            "markers": [
+              3,
+              4
+            ],
+            "overlap": 0.929,
+            "cosine": 0.856,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe masking process involves XORing each octet of the original data with the corresponding octet of the masking key",
+            "markers": [
+              4
+            ],
+            "overlap": 0.556,
+            "cosine": 0.745,
+            "supported": true
+          },
+          {
+            "text": ". This ensures that the contents of the frame are not modifiable by the remote script (application) once transmission begins",
+            "markers": [
+              2
+            ],
+            "overlap": 0.9,
+            "cosine": 0.761,
+            "supported": true
+          },
+          {
+            "text": ".\n\nMasking is essential to prevent attacks on infrastructure, such as poisoning attacks where a client or server sends data that appears to be an HTTP request",
+            "markers": [
+              2
+            ],
+            "overlap": 0.786,
+            "cosine": 0.841,
+            "supported": true
+          },
+          {
+            "text": ". Non-compliant HTTP proxies will still be vulnerable to these types of attacks even with masking in place",
+            "markers": [
+              2
+            ],
+            "overlap": 0.7,
+            "cosine": 0.809,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe payload length does not include the length of the masking key, and it is the length of the \"Payload data\" only",
+            "markers": [
+              6
+            ],
+            "overlap": 1.0,
+            "cosine": 0.915,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q33",
+        "scope": "in",
+        "question": "How does the WebSocket opening handshake upgrade an HTTP connection?",
+        "refused": false,
+        "seconds": 43.5,
+        "answer": "The WebSocket opening handshake upgrades an HTTP connection by sending a request with the \"Upgrade\" header field set to \"websocket\", and including the \"Sec-WebSocket-Version\" header field to negotiate the version of the WebSocket Protocol. If the server supports the requested version, it responds with a 101 (Switching Protocols) status code and includes an \"Upgrade\" header field indicating that the connection is being switched to the WebSocket protocol.\n\n[1] RFC 6455 \u00a74.4: \"The client now repeats the handshake that conforms to version 13:\" [GET /chat HTTP/1.1 ... Sec-WebSocket-Version: 13]\n\n[2][3] RFC 9110 \u00a77.8, RFC 7230 \u00a76.7: \"A server that receives an Upgrade header field in an HTTP/1.0 request MUST ignore that Upgrade field.\" and \"The 'Upgrade' header field is intended to provide a simple mechanism for transitioning from HTTP/1.1 to some other protocol on the same connection.\"\n\n[4] RFC 7540 \u00a73.2: \"A client that makes a request for an 'http' URI without prior knowledge about support for HTTP/2 on the next hop uses the HTTP Upgrade mechanism (Section 6.7 of [RFC7230]).\"\n\n[5][7] RFC 7230 \u00a76.7, RFC 7231 \u00a76.2.2: \"A server that sends a 101 (Switching Protocols) response MUST send an Upgrade header field to indicate the new protocol(s) to which the connection is being switched; if multiple protocol layers are being switched, the sender MUST list the protocols in layer-ascending order.\"",
+        "citations": 6,
+        "invalid_markers": 0,
+        "segments": 4,
+        "segments_supported": 4,
+        "segment_detail": [
+          {
+            "text": "The WebSocket opening handshake upgrades an HTTP connection by sending a request with the \"Upgrade\" header field set to \"websocket\", and including the \"Sec-WebS",
+            "markers": [
+              1
+            ],
+            "overlap": 0.467,
+            "cosine": 0.855,
+            "supported": true
+          },
+          {
+            "text": "RFC 6455 \u00a74.4: \"The client now repeats the handshake that conforms to version 13:\" [GET /chat HTTP/1.1 ... Sec-WebSocket-Version: 13]",
+            "markers": [
+              2,
+              3
+            ],
+            "overlap": 0.333,
+            "cosine": 0.756,
+            "supported": true
+          },
+          {
+            "text": "RFC 9110 \u00a77.8, RFC 7230 \u00a76.7: \"A server that receives an Upgrade header field in an HTTP/1.0 request MUST ignore that Upgrade field.\" and \"The 'Upgrade' header ",
+            "markers": [
+              4
+            ],
+            "overlap": 0.526,
+            "cosine": 0.848,
+            "supported": true
+          },
+          {
+            "text": "RFC 7540 \u00a73.2: \"A client that makes a request for an 'http' URI without prior knowledge about support for HTTP/2 on the next hop uses the HTTP Upgrade mechanism",
+            "markers": [
+              5,
+              7
+            ],
+            "overlap": 0.368,
+            "cosine": 0.797,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q34",
+        "scope": "in",
+        "question": "How do WebSocket control frames such as Close work?",
+        "refused": false,
+        "seconds": 27.9,
+        "answer": "A Close control frame works as follows:\n\n* It contains an opcode of 0x8 [4].\n* It MAY contain a body with a 2-byte unsigned integer status code and optional UTF-8-encoded data [4].\n* If the endpoint receives a Close frame and did not previously send one, it MUST send a Close frame in response [5].\n* The application MUST NOT send any more data frames after sending a Close frame [4].\n\nThe WebSocket Connection Close Code is defined as the status code contained in the first Close control frame received by the application implementing this protocol. If no status code is present, it is considered to be 1005 [2].",
+        "citations": 3,
+        "invalid_markers": 0,
+        "segments": 5,
+        "segments_supported": 5,
+        "segment_detail": [
+          {
+            "text": "A Close control frame works as follows:\n\n* It contains an opcode of 0x8",
+            "markers": [
+              4
+            ],
+            "overlap": 0.625,
+            "cosine": 0.763,
+            "supported": true
+          },
+          {
+            "text": ".\n* It MAY contain a body with a 2-byte unsigned integer status code and optional UTF-8-encoded data",
+            "markers": [
+              4
+            ],
+            "overlap": 0.9,
+            "cosine": 0.773,
+            "supported": true
+          },
+          {
+            "text": ".\n* If the endpoint receives a Close frame and did not previously send one, it MUST send a Close frame in response",
+            "markers": [
+              5
+            ],
+            "overlap": 0.444,
+            "cosine": 0.774,
+            "supported": true
+          },
+          {
+            "text": ".\n* The application MUST NOT send any more data frames after sending a Close frame",
+            "markers": [
+              4
+            ],
+            "overlap": 1.0,
+            "cosine": 0.77,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe WebSocket Connection Close Code is defined as the status code contained in the first Close control frame received by the application implementing this pr",
+            "markers": [
+              2
+            ],
+            "overlap": 0.941,
+            "cosine": 0.926,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q35",
+        "scope": "in",
+        "question": "What is percent-encoding in a URI and when is it required?",
+        "refused": false,
+        "seconds": 35.8,
+        "answer": "Percent-encoding in a URI represents a data octet as a character triplet consisting of the percent character \"%\" followed by two hexadecimal digits representing that octet's numeric value [1]. It is used to represent a data octet when its corresponding character is outside the allowed set or is being used as a delimiter of, or within, the component [1].\n\nPercent-encoding is required for data octets that correspond to characters in the reserved set unless these characters are specifically allowed by the URI scheme to represent data in that component [5]. It is also required when a reserved character is found in a URI component and no delimiting role is known for that character, then it must be interpreted as representing the data octet corresponding to that character's encoding in US-ASCII [5].\n\nURI producers should not create percent-encoded octets in the ranges of ALPHA (%41-%5A and %61-%7A), DIGIT (%30-%39), hyphen (%2D), period (%2E), underscore (%5F), or tilde (%7E) as these correspond to unreserved characters [4].",
+        "citations": 3,
+        "invalid_markers": 0,
+        "segments": 5,
+        "segments_supported": 5,
+        "segment_detail": [
+          {
+            "text": "Percent-encoding in a URI represents a data octet as a character triplet consisting of the percent character \"%\" followed by two hexadecimal digits representing",
+            "markers": [
+              1
+            ],
+            "overlap": 0.938,
+            "cosine": 0.913,
+            "supported": true
+          },
+          {
+            "text": ". It is used to represent a data octet when its corresponding character is outside the allowed set or is being used as a delimiter of, or within, the component",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.785,
+            "supported": true
+          },
+          {
+            "text": ".\n\nPercent-encoding is required for data octets that correspond to characters in the reserved set unless these characters are specifically allowed by the URI sc",
+            "markers": [
+              5
+            ],
+            "overlap": 0.867,
+            "cosine": 0.791,
+            "supported": true
+          },
+          {
+            "text": ". It is also required when a reserved character is found in a URI component and no delimiting role is known for that character, then it must be interpreted as r",
+            "markers": [
+              5
+            ],
+            "overlap": 0.944,
+            "cosine": 0.859,
+            "supported": true
+          },
+          {
+            "text": ".\n\nURI producers should not create percent-encoded octets in the ranges of ALPHA (%41-%5A and %61-%7A), DIGIT (%30-%39), hyphen (%2D), period (%2E), underscore ",
+            "markers": [
+              4
+            ],
+            "overlap": 0.889,
+            "cosine": 0.884,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q36",
+        "scope": "in",
+        "question": "How does base64url encoding differ from standard base64?",
+        "refused": false,
+        "seconds": 21.4,
+        "answer": "Base64url encoding differs from standard base64 in that it uses a URL and filename safe alphabet, replacing the characters \"+\" and \"/\" with \"-\" and \"_\", respectively [4]. This is to ensure that the encoded data can be safely used in URLs and filenames without causing issues due to special character usage.",
+        "citations": 1,
+        "invalid_markers": 0,
+        "segments": 1,
+        "segments_supported": 1,
+        "segment_detail": [
+          {
+            "text": "Base64url encoding differs from standard base64 in that it uses a URL and filename safe alphabet, replacing the characters \"+\" and \"/\" with \"-\" and \"_\", respect",
+            "markers": [
+              4
+            ],
+            "overlap": 0.538,
+            "cosine": 0.868,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q37",
+        "scope": "in",
+        "question": "Which IPv4 address ranges are reserved for private internets?",
+        "refused": false,
+        "seconds": 27.1,
+        "answer": "The reserved private internets are:\n\n* 10.0.0.0 - 10.255.255.255 (10/8 prefix) [1]\n* 172.16.0.0 - 172.31.255.255 (172.16/12 prefix) [2][4]\n* 192.168.0.0 - 192.168.255.255 (192.168/16 prefix) [1][3]\n\nNote that these ranges are reserved for private internets, and addresses within this space will only be unique within the enterprise or set of cooperating enterprises.",
+        "citations": 4,
+        "invalid_markers": 0,
+        "segments": 3,
+        "segments_supported": 2,
+        "segment_detail": [
+          {
+            "text": "The reserved private internets are:\n\n* 10.0.0.0 - 10.255.255.255 (10/8 prefix)",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.762,
+            "supported": true
+          },
+          {
+            "text": "* 172.16.0.0 - 172.31.255.255 (172.16/12 prefix)",
+            "markers": [
+              2,
+              4
+            ],
+            "overlap": 0.0,
+            "cosine": 0.679,
+            "supported": false
+          },
+          {
+            "text": "* 192.168.0.0 - 192.168.255.255 (192.168/16 prefix)",
+            "markers": [
+              1,
+              3
+            ],
+            "overlap": 1.0,
+            "cosine": 0.722,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q38",
+        "scope": "in",
+        "question": "How does fragmentation work in IPv6?",
+        "refused": false,
+        "seconds": 35.3,
+        "answer": "Fragmentation in IPv6 works as follows:\n\n* A node may use the Fragment header to fragment a packet larger than the path MTU at the source [1].\n* The Fragment header is identified by a Next Header value of 44 and has a specific format [1].\n* The Fragment Offset field indicates the offset, in 8-octet units, of the data following this header relative to the start of the Fragmentable Part of the original packet [1].\n* The M flag indicates whether there are more fragments (1) or if it is the last fragment (0) [1].\n* When reassembling an IPv6 datagram, if one or more its constituent fragments is determined to be an overlapping fragment, the entire datagram (and any constituent fragments) must be silently discarded [5].\n\nNote that fragmentation in IPv6 is performed only by source nodes, not by routers along a packet's delivery path [1].",
+        "citations": 2,
+        "invalid_markers": 0,
+        "segments": 6,
+        "segments_supported": 6,
+        "segment_detail": [
+          {
+            "text": "Fragmentation in IPv6 works as follows:\n\n* A node may use the Fragment header to fragment a packet larger than the path MTU at the source",
+            "markers": [
+              1
+            ],
+            "overlap": 0.714,
+            "cosine": 0.871,
+            "supported": true
+          },
+          {
+            "text": ".\n* The Fragment header is identified by a Next Header value of 44 and has a specific format",
+            "markers": [
+              1
+            ],
+            "overlap": 0.857,
+            "cosine": 0.792,
+            "supported": true
+          },
+          {
+            "text": ".\n* The Fragment Offset field indicates the offset, in 8-octet units, of the data following this header relative to the start of the Fragmentable Part of the or",
+            "markers": [
+              1
+            ],
+            "overlap": 0.933,
+            "cosine": 0.787,
+            "supported": true
+          },
+          {
+            "text": ".\n* The M flag indicates whether there are more fragments (1) or if it is the last fragment (0)",
+            "markers": [
+              1
+            ],
+            "overlap": 0.714,
+            "cosine": 0.659,
+            "supported": true
+          },
+          {
+            "text": ".\n* When reassembling an IPv6 datagram, if one or more its constituent fragments is determined to be an overlapping fragment, the entire datagram (and any const",
+            "markers": [
+              5
+            ],
+            "overlap": 1.0,
+            "cosine": 0.848,
+            "supported": true
+          },
+          {
+            "text": ".\n\nNote that fragmentation in IPv6 is performed only by source nodes, not by routers along a packet's delivery path",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.753,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q39",
+        "scope": "in",
+        "question": "How does a DHCP client discover and obtain an IP address?",
+        "refused": false,
+        "seconds": 22.2,
+        "answer": "A DHCP client discovers an IP address by sending a DHCPDISCOVER message [5]. The client then collects DHCPOFFER messages over a period of time, selects one, and extracts the server address from the 'server identifier' option in the DHCPOFFER message [2].\n\nThe client can also use a DHCPINFORM request message to obtain an IP address if it has already obtained a network address through some other means [1]. In this case, the server constructs a DHCPACK message with local configuration parameters and sends it directly to the client.\n\nNote that the excerpts do not provide detailed information on how the client selects one DHCPOFFER message from multiple incoming messages. This is implementation-dependent [2].",
+        "citations": 3,
+        "invalid_markers": 0,
+        "segments": 4,
+        "segments_supported": 4,
+        "segment_detail": [
+          {
+            "text": "A DHCP client discovers an IP address by sending a DHCPDISCOVER message",
+            "markers": [
+              5
+            ],
+            "overlap": 0.571,
+            "cosine": 0.774,
+            "supported": true
+          },
+          {
+            "text": ". The client then collects DHCPOFFER messages over a period of time, selects one, and extracts the server address from the 'server identifier' option in the DHC",
+            "markers": [
+              2
+            ],
+            "overlap": 0.938,
+            "cosine": 0.957,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe client can also use a DHCPINFORM request message to obtain an IP address if it has already obtained a network address through some other means",
+            "markers": [
+              1
+            ],
+            "overlap": 0.857,
+            "cosine": 0.847,
+            "supported": true
+          },
+          {
+            "text": ". In this case, the server constructs a DHCPACK message with local configuration parameters and sends it directly to the client.\n\nNote that the excerpts do not ",
+            "markers": [
+              2
+            ],
+            "overlap": 0.375,
+            "cosine": 0.851,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q40",
+        "scope": "in",
+        "question": "How does DKIM associate a signing domain with an email message?",
+        "refused": false,
+        "seconds": 31.8,
+        "answer": "DKIM associates a signing domain with an email message through the \"d=\" tag in the DKIM-Signature header field [3][6]. The value of this tag is the domain name that is claiming responsibility for the message. \n\nThe \"h=\" tag specifies which header fields are included in the signature calculation, and must include the \"DKIM-Signature\" header field itself [3][6].\n\nThe \"z=\" tag contains a list of copied header fields present when the message was signed, including both the field name and value [4]. This can be used to verify that the message has not been tampered with.\n\nNote: The excerpts do not contain enough information to provide a complete explanation of how DKIM associates a signing domain with an email message.",
+        "citations": 3,
+        "invalid_markers": 0,
+        "segments": 3,
+        "segments_supported": 3,
+        "segment_detail": [
+          {
+            "text": "DKIM associates a signing domain with an email message through the \"d=\" tag in the DKIM-Signature header field",
+            "markers": [
+              3,
+              6
+            ],
+            "overlap": 0.636,
+            "cosine": 0.825,
+            "supported": true
+          },
+          {
+            "text": ". The value of this tag is the domain name that is claiming responsibility for the message. \n\nThe \"h=\" tag specifies which header fields are included in the sig",
+            "markers": [
+              3,
+              6
+            ],
+            "overlap": 0.588,
+            "cosine": 0.833,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe \"z=\" tag contains a list of copied header fields present when the message was signed, including both the field name and value",
+            "markers": [
+              4
+            ],
+            "overlap": 0.929,
+            "cosine": 0.839,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q41",
+        "scope": "in",
+        "question": "What does the SPF all mechanism match?",
+        "refused": false,
+        "seconds": 23.1,
+        "answer": "The SPF \"all\" mechanism matches [1]. \n\nIt is used as the rightmost mechanism in a record to provide an explicit default, and mechanisms after \"all\" will never be tested or ignored [1].",
+        "citations": 1,
+        "invalid_markers": 0,
+        "segments": 2,
+        "segments_supported": 2,
+        "segment_detail": [
+          {
+            "text": "The SPF \"all\" mechanism matches",
+            "markers": [
+              1
+            ],
+            "overlap": 0.75,
+            "cosine": 0.75,
+            "supported": true
+          },
+          {
+            "text": ". \n\nIt is used as the rightmost mechanism in a record to provide an explicit default, and mechanisms after \"all\" will never be tested or ignored",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.841,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q42",
+        "scope": "in",
+        "question": "What is identifier alignment in DMARC?",
+        "refused": false,
+        "seconds": 27.5,
+        "answer": "Identifier alignment in DMARC is defined as the process of checking if the authenticated domains from SPF and/or DKIM match the domain in the RFC5322.From field [1][2][3]. \n\nThere are two modes for identifier alignment: strict and relaxed. In strict mode, only an exact DNS domain match between the authenticated domain and the RFC5322.From domain is considered to produce Identifier Alignment [2]. In relaxed mode, the Organizational Domains of both the authenticated signing domain (for DKIM) or the SPF-authenticated domain and the RFC5322.From domain must be equal for alignment to occur [3].\n\nIdentifier alignment is required because a message can bear a valid signature from any domain, including domains used by a mailing list or even a bad actor. Merely bearing a valid signature is not enough to infer authenticity of the Author Domain [3].",
+        "citations": 3,
+        "invalid_markers": 0,
+        "segments": 4,
+        "segments_supported": 4,
+        "segment_detail": [
+          {
+            "text": "Identifier alignment in DMARC is defined as the process of checking if the authenticated domains from SPF and/or DKIM match the domain in the RFC5322.From field",
+            "markers": [
+              1,
+              2,
+              3
+            ],
+            "overlap": 0.643,
+            "cosine": 0.858,
+            "supported": true
+          },
+          {
+            "text": ". \n\nThere are two modes for identifier alignment: strict and relaxed. In strict mode, only an exact DNS domain match between the authenticated domain and the RF",
+            "markers": [
+              2
+            ],
+            "overlap": 0.812,
+            "cosine": 0.876,
+            "supported": true
+          },
+          {
+            "text": ". In relaxed mode, the Organizational Domains of both the authenticated signing domain (for DKIM) or the SPF-authenticated domain and the RFC5322.From domain mu",
+            "markers": [
+              3
+            ],
+            "overlap": 0.857,
+            "cosine": 0.854,
+            "supported": true
+          },
+          {
+            "text": ".\n\nIdentifier alignment is required because a message can bear a valid signature from any domain, including domains used by a mailing list or even a bad actor. ",
+            "markers": [
+              3
+            ],
+            "overlap": 1.0,
+            "cosine": 0.813,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q43",
+        "scope": "in",
+        "question": "How do MX records determine where mail is relayed?",
+        "refused": false,
+        "seconds": 25.6,
+        "answer": "MX records determine where mail is relayed by specifying a list of candidate hosts for delivery. The SMTP server sorts the MX records by preference, with the lowest-numbered records being most preferred [1]. If a matching record is found, all records at that preference level and higher-numbered ones are discarded from consideration [1].\n\nThe relay host then tries to deliver the message to one of the remaining candidates, best preference first. If there are no records left at this point, it is an error condition, and the message MUST be returned as undeliverable [1].",
+        "citations": 1,
+        "invalid_markers": 0,
+        "segments": 3,
+        "segments_supported": 3,
+        "segment_detail": [
+          {
+            "text": "MX records determine where mail is relayed by specifying a list of candidate hosts for delivery. The SMTP server sorts the MX records by preference, with the lo",
+            "markers": [
+              1
+            ],
+            "overlap": 0.667,
+            "cosine": 0.883,
+            "supported": true
+          },
+          {
+            "text": ". If a matching record is found, all records at that preference level and higher-numbered ones are discarded from consideration",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.665,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe relay host then tries to deliver the message to one of the remaining candidates, best preference first. If there are no records left at this point, it is",
+            "markers": [
+              1
+            ],
+            "overlap": 0.789,
+            "cosine": 0.831,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q44",
+        "scope": "in",
+        "question": "How does the TOTP algorithm generate one-time passwords?",
+        "refused": false,
+        "seconds": 38.5,
+        "answer": "The TOTP algorithm generates one-time passwords by using the time-based moving factor, which is a value derived from a time reference and a time step [1][4]. The time reference is the current Unix time (the number of seconds elapsed since midnight UTC of January 1, 1970) [3][R1], and the time step is a fixed value X that is shared between the prover and verifier [3][R4].\n\nThe algorithm uses the HOTP function as a key building block, which takes the shared secret (key) K and an increasing counter value C as inputs, and produces a one-time password value [1][4]. In TOTP, the counter value C is replaced by the time-based moving factor T, which is derived from the current Unix time and the time step X [3][R4].\n\nThe TOTP algorithm can use HMAC-SHA-1, HMAC-SHA-256, or HMAC-SHA-512 as the hash function [4]. The output of the HOTP (or TOTP) function is truncated to obtain a user-friendly one-time password value [4].\n\nHere's an example of how the TOTP algorithm generates a one-time password:\n\nT = (Unix time + Time step X) mod 2^32\nTOTP = Truncate(HMAC-SHA-1(K, T))\n\nwhere K is the shared secret, and T is the time-based moving factor.",
+        "citations": 3,
+        "invalid_markers": 0,
+        "segments": 7,
+        "segments_supported": 7,
+        "segment_detail": [
+          {
+            "text": "The TOTP algorithm generates one-time passwords by using the time-based moving factor, which is a value derived from a time reference and a time step",
+            "markers": [
+              1,
+              4
+            ],
+            "overlap": 0.615,
+            "cosine": 0.8,
+            "supported": true
+          },
+          {
+            "text": ". The time reference is the current Unix time (the number of seconds elapsed since midnight UTC of January 1, 1970)",
+            "markers": [
+              3
+            ],
+            "overlap": 0.917,
+            "cosine": 0.667,
+            "supported": true
+          },
+          {
+            "text": "[R1], and the time step is a fixed value X that is shared between the prover and verifier",
+            "markers": [
+              3
+            ],
+            "overlap": 0.625,
+            "cosine": 0.709,
+            "supported": true
+          },
+          {
+            "text": "[R4].\n\nThe algorithm uses the HOTP function as a key building block, which takes the shared secret (key) K and an increasing counter value C as inputs, and prod",
+            "markers": [
+              1,
+              4
+            ],
+            "overlap": 0.471,
+            "cosine": 0.845,
+            "supported": true
+          },
+          {
+            "text": ". In TOTP, the counter value C is replaced by the time-based moving factor T, which is derived from the current Unix time and the time step X",
+            "markers": [
+              3
+            ],
+            "overlap": 0.5,
+            "cosine": 0.72,
+            "supported": true
+          },
+          {
+            "text": "[R4].\n\nThe TOTP algorithm can use HMAC-SHA-1, HMAC-SHA-256, or HMAC-SHA-512 as the hash function",
+            "markers": [
+              4
+            ],
+            "overlap": 1.0,
+            "cosine": 0.845,
+            "supported": true
+          },
+          {
+            "text": ". The output of the HOTP (or TOTP) function is truncated to obtain a user-friendly one-time password value",
+            "markers": [
+              4
+            ],
+            "overlap": 0.8,
+            "cosine": 0.788,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q45",
+        "scope": "in",
+        "question": "How does the ACME HTTP-01 challenge prove control of a domain?",
+        "refused": false,
+        "seconds": 38.2,
+        "answer": "The ACME HTTP-01 challenge proves control of a domain by provisioning a resource on an HTTP server accessible under that domain name. The client fulfills this challenge by constructing a key authorization from the \"token\" value provided in the challenge and the client's account key, and then provisions the key authorization as a resource on the HTTP server for the domain in question [1][3].\n\nThe server verifies the client's control of the domain by verifying that the resource was provisioned as expected. This involves constructing a URL using the \"token\" value and the domain name, dereferencing the URL using an HTTP GET request to TCP port 80 on the HTTP server, and verifying that the body of the response is a well-formed key authorization [6].\n\nIf all verifications succeed, then the validation is successful. If the request fails, or the body does not pass these checks, then it has failed [6].",
+        "citations": 3,
+        "invalid_markers": 0,
+        "segments": 3,
+        "segments_supported": 3,
+        "segment_detail": [
+          {
+            "text": "The ACME HTTP-01 challenge proves control of a domain by provisioning a resource on an HTTP server accessible under that domain name. The client fulfills this c",
+            "markers": [
+              1,
+              3
+            ],
+            "overlap": 0.96,
+            "cosine": 0.897,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe server verifies the client's control of the domain by verifying that the resource was provisioned as expected. This involves constructing a URL using the",
+            "markers": [
+              6
+            ],
+            "overlap": 0.692,
+            "cosine": 0.845,
+            "supported": true
+          },
+          {
+            "text": ".\n\nIf all verifications succeed, then the validation is successful. If the request fails, or the body does not pass these checks, then it has failed",
+            "markers": [
+              6
+            ],
+            "overlap": 1.0,
+            "cosine": 0.722,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q46",
+        "scope": "in",
+        "question": "Which Argon2 variant does the RFC recommend and why?",
+        "refused": false,
+        "seconds": 25.2,
+        "answer": "The RFC recommends Argon2id variant with t=1 and 2 GiB memory as the FIRST RECOMMENDED option [1], and Argon2id variant with t=3 and 64 MiB memory as the SECOND RECOMMENDED option [1]. \n\nThese recommendations are based on the following considerations:\n\n* The first recommended option is secure against side-channel attacks and maximizes adversarial costs on dedicated brute-force hardware [1].\n* The second recommended option is suitable for memory-constrained environments [1].\n\nNote that these recommendations are specific to password hashing and proof-of-work applications, as described in RFC 9106.",
+        "citations": 1,
+        "invalid_markers": 0,
+        "segments": 4,
+        "segments_supported": 4,
+        "segment_detail": [
+          {
+            "text": "The RFC recommends Argon2id variant with t=1 and 2 GiB memory as the FIRST RECOMMENDED option",
+            "markers": [
+              1
+            ],
+            "overlap": 0.778,
+            "cosine": 0.906,
+            "supported": true
+          },
+          {
+            "text": ", and Argon2id variant with t=3 and 64 MiB memory as the SECOND RECOMMENDED option",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.861,
+            "supported": true
+          },
+          {
+            "text": ". \n\nThese recommendations are based on the following considerations:\n\n* The first recommended option is secure against side-channel attacks and maximizes advers",
+            "markers": [
+              1
+            ],
+            "overlap": 0.765,
+            "cosine": 0.816,
+            "supported": true
+          },
+          {
+            "text": ".\n* The second recommended option is suitable for memory-constrained environments",
+            "markers": [
+              1
+            ],
+            "overlap": 0.667,
+            "cosine": 0.764,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q47",
+        "scope": "in",
+        "question": "How does the BGP decision process select which route to use?",
+        "refused": false,
+        "seconds": 41.1,
+        "answer": "The BGP decision process selects which route to use by applying the policies in the local Policy Information Base (PIB) [1] to the routes stored in its Adj-RIBs-In. The output of the Decision Process is the set of routes that will be advertised to peers, and the selected routes are stored in the local speaker's Adj-RIBs-Out.\n\nThe selection process involves two phases: Phase 1 and Phase 2. In Phase 1, the BGP speaker selects a route for each set of destinations [3]. If there are multiple routes with the same degree of preference, the tie-breaking procedure is applied [4].\n\nIn the tie-breaking procedure, the following criteria are considered in order:\n\n* Remove from consideration all routes that are not tied for having the smallest number of AS numbers present in their AS_PATH attributes [4].\n* Remove from consideration all routes that are not tied for having the lowest Origin number in their Origin attribute [4].\n* Select the route as a result of the Phase 2 tie-breaking rules specified in Section 9.1.2.2 [5].\n\nThe local speaker then installs the selected route in the Loc-RIB, replacing any existing route to the same destination.\n\nNote that the BGP decision process does not consider the path attributes of other routes when calculating the degree of preference for a given route [1].",
+        "citations": 4,
+        "invalid_markers": 0,
+        "segments": 7,
+        "segments_supported": 7,
+        "segment_detail": [
+          {
+            "text": "The BGP decision process selects which route to use by applying the policies in the local Policy Information Base (PIB)",
+            "markers": [
+              1
+            ],
+            "overlap": 1.0,
+            "cosine": 0.87,
+            "supported": true
+          },
+          {
+            "text": "to the routes stored in its Adj-RIBs-In. The output of the Decision Process is the set of routes that will be advertised to peers, and the selected routes are s",
+            "markers": [
+              3
+            ],
+            "overlap": 0.545,
+            "cosine": 0.758,
+            "supported": true
+          },
+          {
+            "text": ". If there are multiple routes with the same degree of preference, the tie-breaking procedure is applied",
+            "markers": [
+              4
+            ],
+            "overlap": 0.857,
+            "cosine": 0.823,
+            "supported": true
+          },
+          {
+            "text": ".\n\nIn the tie-breaking procedure, the following criteria are considered in order:\n\n* Remove from consideration all routes that are not tied for having the small",
+            "markers": [
+              4
+            ],
+            "overlap": 0.944,
+            "cosine": 0.814,
+            "supported": true
+          },
+          {
+            "text": ".\n* Remove from consideration all routes that are not tied for having the lowest Origin number in their Origin attribute",
+            "markers": [
+              4
+            ],
+            "overlap": 1.0,
+            "cosine": 0.753,
+            "supported": true
+          },
+          {
+            "text": ".\n* Select the route as a result of the Phase 2 tie-breaking rules specified in Section 9.1.2.2",
+            "markers": [
+              5
+            ],
+            "overlap": 0.75,
+            "cosine": 0.788,
+            "supported": true
+          },
+          {
+            "text": ".\n\nThe local speaker then installs the selected route in the Loc-RIB, replacing any existing route to the same destination.\n\nNote that the BGP decision process ",
+            "markers": [
+              1
+            ],
+            "overlap": 0.696,
+            "cosine": 0.848,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q48",
+        "scope": "in",
+        "question": "What are BGP path attributes?",
+        "refused": false,
+        "seconds": 21.4,
+        "answer": "BGP path attributes are not explicitly mentioned in the provided excerpts. However, it can be inferred that BGP-4 provides a set of mechanisms for supporting Classless Inter-Domain Routing (CIDR) and aggregation of routes, including aggregation of AS paths [1][2].\n\nA more detailed explanation of BGP path attributes is not present in these excerpts.",
+        "citations": 2,
+        "invalid_markers": 0,
+        "segments": 1,
+        "segments_supported": 1,
+        "segment_detail": [
+          {
+            "text": "BGP path attributes are not explicitly mentioned in the provided excerpts. However, it can be inferred that BGP-4 provides a set of mechanisms for supporting Cl",
+            "markers": [
+              1,
+              2
+            ],
+            "overlap": 0.591,
+            "cosine": 0.834,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q49",
+        "scope": "in",
+        "question": "What fields make up the IPv4 header?",
+        "refused": false,
+        "seconds": 27.8,
+        "answer": "The IPv4 header consists of the following fields:\n\n* Version (Ver) [3]\n* Internet Header Length (IHL) [3]\n* Type of Service [3]\n* Total Length [3]\n* Identification [3][6]\n* Flags (Flg) [3][6]\n* Fragment Offset [3][6]\n* Time [3]\n* Protocol [3][6]\n* Header Checksum [3][7]\n\nNote that the excerpts do not provide a complete list of all fields in the IPv4 header, but rather show examples and specific fields.",
+        "citations": 3,
+        "invalid_markers": 0,
+        "segments": 2,
+        "segments_supported": 2,
+        "segment_detail": [
+          {
+            "text": "The IPv4 header consists of the following fields:\n\n* Version (Ver)",
+            "markers": [
+              3
+            ],
+            "overlap": 0.286,
+            "cosine": 0.698,
+            "supported": true
+          },
+          {
+            "text": "* Internet Header Length (IHL)",
+            "markers": [
+              3
+            ],
+            "overlap": 0.5,
+            "cosine": 0.659,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q50",
+        "scope": "in",
+        "question": "How does Ed25519 signature generation work?",
+        "refused": false,
+        "seconds": 41.4,
+        "answer": "Ed25519 signature generation is not explicitly described in the provided excerpts. However, it can be inferred that Ed25519 uses the Ed25519 algorithm as specified in RFC 8032 \u00a75 (EdDSA Instances) [2], which instantiates the general EdDSA algorithm for the edwards25519 curve.\n\nThe actual signature generation process is likely to involve the steps described in RFC 8032 \u00a77.1 (Test Vectors for Ed25519), but these are only test vectors and not a description of the algorithm itself.\n\nTherefore, I must say that the provided excerpts do not contain enough information to describe how Ed25519 signature generation works.",
+        "citations": 1,
+        "invalid_markers": 0,
+        "segments": 1,
+        "segments_supported": 1,
+        "segment_detail": [
+          {
+            "text": "Ed25519 signature generation is not explicitly described in the provided excerpts. However, it can be inferred that Ed25519 uses the Ed25519 algorithm as specif",
+            "markers": [
+              2
+            ],
+            "overlap": 0.25,
+            "cosine": 0.728,
+            "supported": true
+          }
+        ]
+      },
+      {
+        "id": "q51",
+        "scope": "out",
+        "question": "What is the best biryani recipe?",
+        "refused": true,
+        "seconds": 9.3,
+        "answer": "I can't answer that from the RFC corpus I have indexed. My knowledge covers IETF standards (HTTP, TLS, QUIC, DNS, email, OAuth, transport and routing protocols, and related formats) \u2014 please ask something in that scope."
+      },
+      {
+        "id": "q52",
+        "scope": "out",
+        "question": "Who won the 2022 FIFA World Cup?",
+        "refused": true,
+        "seconds": 9.0,
+        "answer": "I can't answer that from the RFC corpus I have indexed. My knowledge covers IETF standards (HTTP, TLS, QUIC, DNS, email, OAuth, transport and routing protocols, and related formats) \u2014 please ask something in that scope."
+      },
+      {
+        "id": "q53",
+        "scope": "out",
+        "question": "How do I center a div horizontally and vertically in CSS?",
+        "refused": true,
+        "seconds": 8.5,
+        "answer": "I can't answer that from the RFC corpus I have indexed. My knowledge covers IETF standards (HTTP, TLS, QUIC, DNS, email, OAuth, transport and routing protocols, and related formats) \u2014 please ask something in that scope."
+      },
+      {
+        "id": "q54",
+        "scope": "out",
+        "question": "What does the Linux fork() system call return in the child process?",
+        "refused": true,
+        "seconds": 9.9,
+        "answer": "I can't answer that from the RFC corpus I have indexed. My knowledge covers IETF standards (HTTP, TLS, QUIC, DNS, email, OAuth, transport and routing protocols, and related formats) \u2014 please ask something in that scope."
+      },
+      {
+        "id": "q55",
+        "scope": "out",
+        "question": "Summarize the plot of Hamlet.",
+        "refused": true,
+        "seconds": 10.8,
+        "answer": "I can't answer that from the RFC corpus I have indexed. My knowledge covers IETF standards (HTTP, TLS, QUIC, DNS, email, OAuth, transport and routing protocols, and related formats) \u2014 please ask something in that scope."
+      },
+      {
+        "id": "q56",
+        "scope": "out",
+        "question": "What is the capital of Australia?",
+        "refused": true,
+        "seconds": 10.0,
+        "answer": "I can't answer that from the RFC corpus I have indexed. My knowledge covers IETF standards (HTTP, TLS, QUIC, DNS, email, OAuth, transport and routing protocols, and related formats) \u2014 please ask something in that scope."
+      },
+      {
+        "id": "q57",
+        "scope": "out",
+        "question": "How does Bitcoin adjust its mining difficulty?",
+        "refused": true,
+        "seconds": 11.4,
+        "answer": "I can't answer that from the RFC corpus I have indexed. My knowledge covers IETF standards (HTTP, TLS, QUIC, DNS, email, OAuth, transport and routing protocols, and related formats) \u2014 please ask something in that scope."
+      },
+      {
+        "id": "q58",
+        "scope": "out",
+        "question": "What is pod affinity in Kubernetes?",
+        "refused": true,
+        "seconds": 9.0,
+        "answer": "I can't answer that from the RFC corpus I have indexed. My knowledge covers IETF standards (HTTP, TLS, QUIC, DNS, email, OAuth, transport and routing protocols, and related formats) \u2014 please ask something in that scope."
+      },
+      {
+        "id": "q59",
+        "scope": "out",
+        "question": "Write a Python function that reverses a string.",
+        "refused": true,
+        "seconds": 10.7,
+        "answer": "I can't answer that from the RFC corpus I have indexed. My knowledge covers IETF standards (HTTP, TLS, QUIC, DNS, email, OAuth, transport and routing protocols, and related formats) \u2014 please ask something in that scope."
+      },
+      {
+        "id": "q60",
+        "scope": "out",
+        "question": "What are the common side effects of ibuprofen?",
+        "refused": true,
+        "seconds": 11.5,
+        "answer": "I can't answer that from the RFC corpus I have indexed. My knowledge covers IETF standards (HTTP, TLS, QUIC, DNS, email, OAuth, transport and routing protocols, and related formats) \u2014 please ask something in that scope."
+      }
+    ]
+  }
+}
